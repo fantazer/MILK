@@ -1,0 +1,24 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.content
+	+header()
+	.cont
+		.main-cont
+			.main-list
+				- for (var i=0;i<4;i++)
+					.main-list__el
+						.main-list__el-img
+							.main-list__el-img-el(style="background-image:url('img/item.png')")
+						.main-list__el-title молоко
+						.main-list__el-text 12 наименований
+				.main-list__long
+					.main-list__long-img
+						img(src="img/milk.svg", alt="")
+					.main-list__long-cont
+						.main-list__long-title Доставка и оплата
+						.main-list__long-text Бесплатная доствка от 2 000 руб. Наличный расчет или картой онлайн
+	+footer()
++modals()
+
+include ./block_html/_script.pug

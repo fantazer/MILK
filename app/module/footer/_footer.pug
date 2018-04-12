@@ -1,0 +1,40 @@
+mixin footer()
+	//block footer
+	.footer-cont
+		.footer-wave
+		.main-cont
+			.footer
+				.footer__info
+					.footer__info-text © Милк Бутик. 2018. Все права защищены
+					a(href="#").footer__info-offer Публичная оферта
+					.footer-soc-row
+						a(href="#").footer-soc-row__el
+							+icon("soc-vk","icon")
+						a(href="#").footer-soc-row__el
+							+icon("soc-facebook","icon")
+						a(href="#").footer-soc-row__el
+							+icon("soc-instagram","icon")
+				.footer__nav
+					-
+						var items = [
+							'Молоко',
+							'Десерты',
+							'Кисломолочка',
+							'Сметана',
+							'О молоке',
+							'Экспертное мнение',
+							'О доставке',
+							'Новости'
+							];
+					each item in items
+						.footer__nav-el #{item}
+				.footer__cont
+					.footer__pay
+						.footer__pay-icon
+							+icon("garbage","icon")
+						.footer__pay-text Оплата картой онлайн
+					a(href="tel:8 800 333 86 63").footer__phone 8 800 333 86 63
+					.footer__callback Обратный звонок
+
+
+	//block footer end

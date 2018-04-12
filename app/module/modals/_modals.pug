@@ -1,0 +1,22 @@
+mixin modals()
+	//block modals
+	.modal-layer
+		.modal(data-modal="TEMPLATE")
+			.modal-content
+				.modal-close
+					+icon("close","icon")
+				.modal-head
+					.modal-head-wave
+					.modal-title Восстановление пароля!!!
+				.modal-info
+					form(action="#")
+						.input-row
+							.input-row-title Ваш Email
+							input(type="text").input
+						.pass-text--mid Мы отправим пароль на указанный вами email
+						.btn-row--mid
+							.btn--md.btn--mark
+								.btn--icon
+									span Отправить
+									+icon("arrow-right","nav-icon")
+	//block modals end

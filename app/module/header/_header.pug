@@ -1,0 +1,55 @@
+mixin header()
+	//block header
+	.head
+		.head-bg
+		.head-wave
+		.main-cont
+			.header
+				.header-phone
+					.header-phone__icon
+						+icon("phone-call","icon")
+					.header-phone__info
+						a(href="tel:8 800 333 86 63").header-phone__numb 8 800 333 86 63
+						.header-phone__callback.modal-get(data-modal="TEMPLATE") Обратный звонок
+				a(href="/").header-logo
+					+icon("logo","icon")
+				.header-personal
+					.header-login
+						.header-login__icon
+							+icon("heart","icon")
+						//.header-basket.header-basket--empty
+						.header-basket
+							.header-basket__icon
+								+icon("mail","icon")
+							.header-basket__price 2 220 руб.
+							.header-basket__val 12
+							.basket
+								.basket__title моя корзина
+								.basket__list
+									- for (var i=0;i<5;i++)
+										.basket__el
+											.basket__el-img(style="background-image:url('img/item.png')")
+											.basket__el-inf Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%
+											.basket__el-val
+												.basket__el-price Цена: 350 руб.
+												.basket__el-incr
+													+incr()
+								.basket__total 2 220 руб.
+								.basket__get
+									a(href="#").btn--md.btn--light В корзину
+									a(href="#").btn--md.btn--mark оформить
+
+		.header__nav-cont
+			.header__nav
+				a(href="#").header__nav-el.header__nav-el--active Продукция
+				-
+					var items = [
+						'О молоке',
+						'Экспертное мнение',
+						'О доставке',
+						'Новости',
+						'Контакты'
+						];
+				each item in items
+					a(href="#").header__nav-el #{item}
+	//block header end

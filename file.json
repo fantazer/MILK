@@ -1,0 +1,10 @@
+{
+	"block":{
+		"header":"header",
+		"footer":"footer",
+		"modals":"modals"
+	},
+	"page":{
+		"index":"index"
+	}
+}

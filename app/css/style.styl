@@ -1,0 +1,512 @@
+@import 'rupture'
+@import "variable/_function.styl"
+@import "variable/_fonts.styl"
+@import "variable/_ie.styl"
+@import "icon/sprite.css"
+@import "variable/_helper.styl"
+@import "variable/_default.styl"
+@import "variable/_elements.styl"
+@import "variable/_constant.styl"
+@import "../module/**/*"
+
+body
+	@extend .type--main
+	font-family $v-font
+	color $main-text-color
+	line-height 1.2
+	letter-spacing 0.01em
+
+.main-cont
+	center(1200px,10px)
+
+.card
+	box-shadow 0 10px 25px rgba(28, 0, 74, 0.1)
+	border-radius 14px
+
+
+.head
+	background-color #8c6dcb
+	background-image linear-gradient(to top, rgba(104, 75, 212, 0.7) 0%, rgba(157, 119, 195, 0.7) 100%)
+	position: relative
+	padding-top: 20px
+	padding-bottom: 55px
+
+.head-bg
+	position: absolute
+	width: 100%
+	height: 100%
+	left: 0
+	top: 0
+	//background-image: url(../img/pattern.png)
+.head-wave
+	position: absolute
+	width: 100%
+	height: 30px
+	left: 0px
+	bottom: 0
+	background-image: url(../img/wave-3.svg)
+	background-size:cover
+.header
+	flex(between)
+	margin-bottom: 25px
+.header-phone
+	f()
+	justify-content: center
+	align-items: center
+.header-phone__icon
+	round()
+	flex(mid)
+	size 55px
+	border 1px solid white
+	margin-right: 20px
+	.icon
+		fill white
+		size 20px
+//.header-phone__info
+.header-phone__numb
+	color white
+	font-size: 20px
+	margin-bottom: 20px
+	&:hover
+		color white
+.header-phone__callback
+	@extend .type--main
+	text-decoration: underline
+	color white
+	opacity .5
+.header-logo
+	.icon
+		fill white
+		width: 90px
+		height: 135px
+.header-personal
+	f()
+	align-items: center
+.header-login
+	flex(between)
+.header-login__icon
+	round()
+	flex(mid)
+	tr(all)
+	cp()
+	size 55px
+	border 1px solid white
+	margin-right: 20px
+	&:hover
+		background: white
+		.icon
+			fill $purple
+	.icon
+		tr(all)
+		fill white
+		size 20px
+.header-basket
+	flex(between)
+	cp()
+	tr(all)
+	box-shadow 0 2px 6px rgba(124, 92, 205, 0.31)
+	border-radius 27px
+	background-color #ffffff
+	padding: 15px 25px 15px 15px
+	position: relative
+.header-basket--active
+	border-radius 27px 27px 0 0
+.header-basket__icon
+	margin-right: 15px
+	flex(mid)
+	z-index 2
+	.icon
+		width: 32px
+		height: 24px
+		fill black
+.header-basket__price
+	color #3d315b
+	//font-family Pusia
+	z-index 2
+	font-size 18px
+	font-weight 700
+.header-basket__val
+	round()
+	flex(mid)
+	position: absolute
+	top -5px
+	right: 0
+	color white
+	size 28px
+	border 3px solid #ffffff
+	background-color #d13434
+	font-size: 12px
+	line-height: 10px
+.header__nav-cont
+	center(960px,0)
+.header__nav
+	flex(between)
+.header__nav-el
+	color #ffffff
+	font-family Roboto
+	font-size 18px
+	border-radius 20px
+	padding: 10px 25px
+	tr(all)
+	&:hover
+		color white
+		background-color rgba(255, 255, 255, 0.2)
+.header__nav-el--active
+	background-color rgba(255, 255, 255, 0.2)
+
+.header-basket--empty
+	round()
+	flex(mid)
+	cp()
+	tr(all)
+	padding: 0
+	size 55px
+	border 1px solid white
+	background: none
+	border-radius 27px
+	&:hover
+		background: white
+		.icon
+			fill $purple
+	.icon
+		tr(all)
+		fill white
+		size 20px
+	.header-basket__price,
+	.header-basket__val
+		display: none
+	.header-basket__icon
+		margin: 0
+
+
+.basket
+	@extend .card
+	position: absolute
+	background: white
+	width: 480px
+	right: 0
+	top 20px
+	padding: 40px 10px 55px 30px
+	z-index 1
+	display: none
+.basket__title
+	font-size: 28px
+	color #9c94b1
+	margin-bottom: 10px
+.basket__list
+	max-height: 490px
+	position: relative
+.basket__el
+	f()
+	justify-content: space-between
+	padding: 25px 0px 25px 0
+	border-bottom 1px solid #e3e3e3
+	margin-right: 20px
+.basket__el-img
+	size 65px
+	bg-full()
+.basket__el-inf
+	@extend .type--main
+	width: 40%
+	line-height: 1.6
+.basket__el-val
+	f()
+	fl()
+//.basket__el-price
+.basket__el-incr
+	margin-top: auto
+.basket__total
+	text-align: center
+	font-size: 28px
+	margin: 40px 0
+//.basket__get
+
+.incr
+	+below(768px)
+		margin-bottom: 20px
+	f()
+	justify-content: space-between
+	position relative
+	width 100px
+.incr__nav
+	flex(mid)
+	size 30px
+	.icon
+		size 12px
+		fill #b3b3b3
+	&:hover
+		cp()
+		border 0
+		.icon
+			fill black
+.incr__val
+	flex(mid)
+	position relative
+	tr(all)
+	color #372f4b
+	//font-family Pusia
+	font-size 18px
+
+.ps.ps--active-x > .ps__scrollbar-x-rail, .ps.ps--active-y > .ps__scrollbar-y-rail
+	background-color #f6f6f6
+
+.ps > .ps__scrollbar-y-rail:hover > .ps__scrollbar-y, .ps > .ps__scrollbar-y-rail:active > .ps__scrollbar-y
+	width: 5px
+.ps > .ps__scrollbar-y-rail
+	width: 7px
+
+.ps__scrollbar-y-rail
+	opacity: 0.6!important
+
+.ps__rail-y
+	opacity: 0.6!important
+
+.basket__get
+	flex(between)
+	.btn--md
+		width: 48%
+
+//modal
+.modal-layer
+	width: 100%
+	height: 100%
+	position: fixed
+	z-index 1000
+	top 0
+	left 0
+	visibility: hidden
+	transition all 1s // duration for fade
+	opacity 0
+	overflow auto
+	background: rgba(0,0,0,0.5)
+	text-align: center
+	//padding: 20px 0
+	&:before
+		display: inline-block
+		vertical-align: middle
+		width: 0
+		height: 100%
+		content: ''
+		margin-right: -8px
+
+
+.modal-layer-show
+	visibility: visible
+	opacity 1
+	transition opacity 1.4s
+
+
+.modal
+	box-shadow 0 2px 4px rgba(0, 0, 0, 0.24)
+	display: inline-block
+	vertical-align: middle
+	transform translateY(-20%)
+	height: 1px
+	margin: -1px
+	width: 1px
+	padding: 0
+	clip rect(0 0 0 0)
+	opacity: 0
+	@extend .card
+.modal.modal__show
+	transform translateY(0%)
+	height: auto
+	clip initial
+	margin:0
+	opacity: 1
+	width: auto
+	transition all 1.2s
+
+.modal-content
+	+below(768px)
+		width:initial
+		max-width 390px
+	br(15px)
+	width: 600px
+	position: relative
+	background: white
+	text-align: initial
+.modal-close
+	+below(768px)
+		top -40px
+		right -40px
+	position: absolute
+	top -40px
+	right -40px
+	cp()
+	.icon
+		+below(768px)
+			size 18px
+		size 24px
+		fill rgba(255, 255, 255, 0.51)
+
+//modal===end
+
+.modal-title
+	@extend .type--lg
+	text-align: center
+	color white
+
+.modal-head
+	padding: 35px 0
+	background-color #8c6dcb
+	background-image linear-gradient(to top, rgba(104, 75, 212, 0.7) 0%, rgba(157, 119, 195, 0.7) 100%)
+	border-radius 15px 15px 0 0
+	position: relative
+.modal-info
+	padding: 60px 50px 70px 50px
+
+.input-row
+	input
+		width: 100%
+.input-row-title
+	@extend .type--main
+	margin-bottom: 10px
+
+.pass-text--mid
+	@extend .type--main
+	text-align: center
+	margin-top: 20px
+	margin-bottom: 35px
+	
+.btn-row--mid
+	flex(mid)
+
+.modal-blur
+	filter blur(20px)
+	tr(all)
+
+.modal-head-wave
+	position: absolute
+	width: 100%
+	height: 30px
+	left: 0px
+	bottom: 0
+	background-image: url(../img/wave-3.svg)
+	background-size:cover
+
+.cont
+	background: #f2eff8
+	padding-bottom: 90px
+
+//.cont
+//.main-cont
+
+.main-list
+	display grid
+	grid-template-columns: repeat(3, 1fr)
+	grid-gap: 20px
+.main-list__el
+	@extend .card
+	background: white
+	padding: 50px
+	flex(mid)
+	fl()
+.main-list__el-img
+	width: 100%
+.main-list__el-img-el
+	bg-full()
+	background-size: contain
+	padding: 35% 20%
+	margin-bottom: 50px
+.main-list__el-title
+	color $title-color
+	font-family Pusia
+	font-size 28px
+	font-weight 700
+	margin-bottom: 15px
+.main-list__el-text
+	@extend .type--main
+.main-list__long
+	@extend .card
+	background: white
+	padding: 50px
+	flex(between)
+	grid-column: 2/4
+.main-list__long-img
+	width: 35%
+	margin-right: 5%
+.main-list__long-cont
+	width: 60%
+.main-list__long-title
+	color $title-color
+	font-family Pusia
+	font-size 28px
+	margin-bottom: 10px
+.main-list__long-text
+	@extend .type--main
+	line-height: 1.6
+
+.footer-cont
+	position: relative
+//.main-cont
+.footer
+	padding: 70px 0
+	f()
+	justify-content: space-between
+	align-items: flex-start
+.footer-wave
+	position: absolute
+	width: 100%
+	height: 30px
+	left: 0px
+	top: -30px
+	background-image: url(../img/wave-3.svg)
+	background-size:cover
+.footer__info
+	width: 165px
+.footer__info-text
+	line-height: 1.6
+	margin-bottom: 15px
+.footer__info-offer
+	@extend .type--main
+	text-decoration: underline
+	margin-bottom: 45px
+	display: inline-block
+.footer-soc-row
+	f()
+.footer-soc-row__el
+	round()
+	size 30px
+	flex(mid)
+	background: #7f7f7f
+	margin-right: 20px
+	.icon
+		size 20px
+		fill white
+.footer__nav
+	flex(between)
+	fw()
+	width: 40%
+.footer__nav-el
+	@extend .type--main
+	width: 48%
+	text-decoration: underline
+	margin-bottom: 20px
+//.footer__cont
+.footer__pay
+	flex(between)
+	margin-bottom: 30px
+	padding-bottom: 30px
+	border-bottom 1px solid $border-color
+.footer__pay-icon
+	size 50px
+	flex(mid)
+	round()
+	margin-right: 20px
+	background: $purple
+	.icon
+		size 30px
+		fill white
+//.footer__pay-text
+.footer__phone
+	font-family Pusia
+	font-size 20px
+	display: inline-block
+	margin-bottom: 10px
+
+.footer__callback
+	color #00b4ff
+	font-family Roboto
+	@extend .type--main
+	font-weight 400
