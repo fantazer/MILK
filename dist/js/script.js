@@ -58,7 +58,7 @@ $(document).ready(function(){
 		$(".basket__el-inf").dotdotdot({
       ellipsis: "...",
 			wrap: "word",
-			height: 75,
+			height: 75
    });
 	//dott text===end
 		//scroll menu
