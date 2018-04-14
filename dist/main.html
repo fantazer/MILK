@@ -43,24 +43,23 @@
 		<link rel="stylesheet" href="css/vendor.css">
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/style-edit.css" />
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
 	</head>
 	<!-- mixin nameMixin()-->
 	<!-- - var args = Array.prototype.slice.call(arguments)-->
 	<!-- - for item in args-->
 
 	<body>
-		<div class="content">
+		<div class="content content--main">
 			<!--block header-->
 			<div class="head">
-				<div class="head-bg"></div>
+				<div class="wave-bg"></div>
 				<div class="head-wave"></div>
 				<div class="main-cont">
 					<div class="header">
 						<div class="header-phone">
 							<div class="header-phone__icon">
 								<svg class="icon">
-									<use xlink:href="#phone-call"></use>
+									<use xlink:href="#phone"></use>
 								</svg>
 							</div>
 							<div class="header-phone__info">
@@ -77,14 +76,14 @@
 							<div class="header-login">
 								<div class="header-login__icon">
 									<svg class="icon">
-										<use xlink:href="#heart"></use>
+										<use xlink:href="#profile"></use>
 									</svg>
 								</div>
 								<!--.header-basket.header-basket--empty-->
 								<div class="header-basket">
 									<div class="header-basket__icon">
 										<svg class="icon">
-											<use xlink:href="#mail"></use>
+											<use xlink:href="#cart"></use>
 										</svg>
 									</div>
 									<div class="header-basket__price">2 220 руб.</div>
@@ -93,8 +92,8 @@
 										<div class="basket__title">моя корзина</div>
 										<div class="basket__list">
 											<div class="basket__el">
-												<div class="basket__el-img" style="background-image:url('img/item.png')"></div>
-												<div class="basket__el-inf">Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%</div>
+												<a class="basket__el-img" href="#" style="background-image:url('img/item.png')"></a>
+												<a class="basket__el-inf" href="#">Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%</a>
 												<div class="basket__el-val">
 													<div class="basket__el-price">Цена: 350 руб.</div>
 													<div class="basket__el-incr">
@@ -107,7 +106,7 @@
 																</div>
 																<div class="incr__val">
 																	<span>1</span>
-																	<div class="incr__val-coner"></div>
+																	<div class="incr__val-coner">шт.</div>
 																</div>
 																<div class="incr__plus incr__nav">
 																	<svg class="icon">
@@ -120,8 +119,8 @@
 												</div>
 											</div>
 											<div class="basket__el">
-												<div class="basket__el-img" style="background-image:url('img/item.png')"></div>
-												<div class="basket__el-inf">Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%</div>
+												<a class="basket__el-img" href="#" style="background-image:url('img/item.png')"></a>
+												<a class="basket__el-inf" href="#">Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%</a>
 												<div class="basket__el-val">
 													<div class="basket__el-price">Цена: 350 руб.</div>
 													<div class="basket__el-incr">
@@ -134,7 +133,7 @@
 																</div>
 																<div class="incr__val">
 																	<span>1</span>
-																	<div class="incr__val-coner"></div>
+																	<div class="incr__val-coner">шт.</div>
 																</div>
 																<div class="incr__plus incr__nav">
 																	<svg class="icon">
@@ -147,8 +146,8 @@
 												</div>
 											</div>
 											<div class="basket__el">
-												<div class="basket__el-img" style="background-image:url('img/item.png')"></div>
-												<div class="basket__el-inf">Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%</div>
+												<a class="basket__el-img" href="#" style="background-image:url('img/item.png')"></a>
+												<a class="basket__el-inf" href="#">Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%</a>
 												<div class="basket__el-val">
 													<div class="basket__el-price">Цена: 350 руб.</div>
 													<div class="basket__el-incr">
@@ -161,7 +160,7 @@
 																</div>
 																<div class="incr__val">
 																	<span>1</span>
-																	<div class="incr__val-coner"></div>
+																	<div class="incr__val-coner">шт.</div>
 																</div>
 																<div class="incr__plus incr__nav">
 																	<svg class="icon">
@@ -174,8 +173,8 @@
 												</div>
 											</div>
 											<div class="basket__el">
-												<div class="basket__el-img" style="background-image:url('img/item.png')"></div>
-												<div class="basket__el-inf">Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%</div>
+												<a class="basket__el-img" href="#" style="background-image:url('img/item.png')"></a>
+												<a class="basket__el-inf" href="#">Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%</a>
 												<div class="basket__el-val">
 													<div class="basket__el-price">Цена: 350 руб.</div>
 													<div class="basket__el-incr">
@@ -188,7 +187,7 @@
 																</div>
 																<div class="incr__val">
 																	<span>1</span>
-																	<div class="incr__val-coner"></div>
+																	<div class="incr__val-coner">шт.</div>
 																</div>
 																<div class="incr__plus incr__nav">
 																	<svg class="icon">
@@ -201,8 +200,8 @@
 												</div>
 											</div>
 											<div class="basket__el">
-												<div class="basket__el-img" style="background-image:url('img/item.png')"></div>
-												<div class="basket__el-inf">Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%</div>
+												<a class="basket__el-img" href="#" style="background-image:url('img/item.png')"></a>
+												<a class="basket__el-inf" href="#">Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%</a>
 												<div class="basket__el-val">
 													<div class="basket__el-price">Цена: 350 руб.</div>
 													<div class="basket__el-incr">
@@ -215,7 +214,7 @@
 																</div>
 																<div class="incr__val">
 																	<span>1</span>
-																	<div class="incr__val-coner"></div>
+																	<div class="incr__val-coner">шт.</div>
 																</div>
 																<div class="incr__plus incr__nav">
 																	<svg class="icon">
@@ -253,36 +252,60 @@
 			<!--block header end-->
 			<div class="cont">
 				<div class="main-cont">
+					<div class="slider-wrap">
+						<div class="slider-control slider-control--left">
+							<svg class="icon">
+								<use xlink:href="#play"></use>
+							</svg>
+						</div>
+						<div class="slider-control slider-control--right">
+							<svg class="icon">
+								<use xlink:href="#play"></use>
+							</svg>
+						</div>
+						<div class="main-slider">
+							<a class="slider-item" href="#">
+								<div class="slider-item__img--one">
+									<img src="img/banner-1-md.png" alt="" />
+								</div>
+							</a>
+							<a class="slider-item" href="#">
+								<div class="slider-item__img--two">
+									<img src="img/banner-2-md.png" alt="" />
+								</div>
+							</a>
+						</div>
+					</div>
 					<div class="main-list">
-						<div class="main-list__el">
+						<a class="main-list__el" href="#">
 							<div class="main-list__el-img">
 								<div class="main-list__el-img-el" style="background-image:url('img/item.png')"></div>
 							</div>
 							<div class="main-list__el-title">молоко</div>
 							<div class="main-list__el-text">12 наименований</div>
-						</div>
-						<div class="main-list__el">
+						</a>
+						<a class="main-list__el" href="#">
 							<div class="main-list__el-img">
 								<div class="main-list__el-img-el" style="background-image:url('img/item.png')"></div>
 							</div>
 							<div class="main-list__el-title">молоко</div>
 							<div class="main-list__el-text">12 наименований</div>
-						</div>
-						<div class="main-list__el">
+						</a>
+						<a class="main-list__el" href="#">
 							<div class="main-list__el-img">
 								<div class="main-list__el-img-el" style="background-image:url('img/item.png')"></div>
 							</div>
 							<div class="main-list__el-title">молоко</div>
 							<div class="main-list__el-text">12 наименований</div>
-						</div>
-						<div class="main-list__el">
+						</a>
+						<a class="main-list__el" href="#">
 							<div class="main-list__el-img">
 								<div class="main-list__el-img-el" style="background-image:url('img/item.png')"></div>
 							</div>
 							<div class="main-list__el-title">молоко</div>
 							<div class="main-list__el-text">12 наименований</div>
-						</div>
-						<div class="main-list__long">
+						</a>
+						<a class="main-list__long" href="#">
 							<div class="main-list__long-img">
 								<img src="img/milk.svg" alt="" />
 							</div>
@@ -290,7 +313,7 @@
 								<div class="main-list__long-title">Доставка и оплата</div>
 								<div class="main-list__long-text">Бесплатная доствка от 2 000 руб. Наличный расчет или картой онлайн</div>
 							</div>
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -321,20 +344,20 @@
 							</div>
 						</div>
 						<div class="footer__nav">
-							<div class="footer__nav-el">Молоко</div>
-							<div class="footer__nav-el">Десерты</div>
-							<div class="footer__nav-el">Кисломолочка</div>
-							<div class="footer__nav-el">Сметана</div>
-							<div class="footer__nav-el">О молоке</div>
-							<div class="footer__nav-el">Экспертное мнение</div>
-							<div class="footer__nav-el">О доставке</div>
-							<div class="footer__nav-el">Новости</div>
+							<a class="footer__nav-el" href="#">Молоко</a>
+							<a class="footer__nav-el" href="#">Десерты</a>
+							<a class="footer__nav-el" href="#">Кисломолочка</a>
+							<a class="footer__nav-el" href="#">Сметана</a>
+							<a class="footer__nav-el" href="#">О молоке</a>
+							<a class="footer__nav-el" href="#">Экспертное мнение</a>
+							<a class="footer__nav-el" href="#">О доставке</a>
+							<a class="footer__nav-el" href="#">Новости</a>
 						</div>
 						<div class="footer__cont">
 							<div class="footer__pay">
 								<div class="footer__pay-icon">
 									<svg class="icon">
-										<use xlink:href="#garbage"></use>
+										<use xlink:href="#money"></use>
 									</svg>
 								</div>
 								<div class="footer__pay-text">Оплата картой онлайн</div>

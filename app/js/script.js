@@ -1,5 +1,23 @@
 $(document).ready(function(){
 
+	//slider-main
+	$('.main-slider').slick({
+		slidesToShow: 1,
+		autoplay: true,
+		speed: 1500,
+		vertical:false,
+		arrows: false,
+		fade: true,
+	});
+	$('.slider-control--right').click(function(){
+		$(this).closest(".slider-wrap").find(".main-slider").slick('slickNext');
+	});
+
+	$('.slider-control--left').click(function(){
+		$(this).closest(".slider-wrap").find(".main-slider").slick('slickPrev');
+	});
+	//slider-main===end
+
 	//dott text
 	/*	var dot = $(".basket__el-inf").dotdotdot({
       ellipsis: "...",

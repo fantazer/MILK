@@ -1,18 +1,30 @@
 include block_html/_style.pug
 include block_html/_include.pug
 
-.content
+.content.content--main
 	+header()
 	.cont
 		.main-cont
+			.slider-wrap
+				.slider-control.slider-control--left
+					+icon("play","icon")
+				.slider-control.slider-control--right
+					+icon("play","icon")
+				.main-slider
+					a(href="#").slider-item
+						.slider-item__img--one
+							img(src="img/banner-1-md.png", alt="")
+					a(href="#").slider-item
+						.slider-item__img--two
+							img(src="img/banner-2-md.png", alt="")
 			.main-list
 				- for (var i=0;i<4;i++)
-					.main-list__el
+					a(href="#").main-list__el
 						.main-list__el-img
 							.main-list__el-img-el(style="background-image:url('img/item.png')")
 						.main-list__el-title молоко
 						.main-list__el-text 12 наименований
-				.main-list__long
+				a(href="#").main-list__long
 					.main-list__long-img
 						img(src="img/milk.svg", alt="")
 					.main-list__long-cont

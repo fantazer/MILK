@@ -1,0 +1,38 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.content
+	+header()
+	.cont
+		.main-cont
+			.filter
+				.filter__el.filter__el--active Молоко
+				-
+					var items = [
+						'Десерты',
+						'Кисломолочка',
+						'Сметана'
+						];
+				each item in items
+					a(href="#").filter__el #{item}
+			.page-title Десерты
+			.list
+				- for (var i=0;i<12;i++)
+					.list-el
+						.list-el__cont
+							.list-el__img
+								.list-el__img-el(style="background-image:url('img/item.png')")
+							.list-el__title Йогурт с абрикосом, миндалем и гранолой
+							.list-el__descr Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%
+						.list-el__get
+							.list-el__price 120 руб.
+							.list-el__text Добавить
+							.list-el__arrow
+								+icon("arrow-right","icon")
+
+						
+			
+	+footer()
++modals()
+
+include ./block_html/_script.pug

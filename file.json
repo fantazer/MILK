@@ -5,6 +5,8 @@
 		"modals":"modals"
 	},
 	"page":{
-		"index":"index"
+		"index":"index",
+		"list":"list",
+		"news":"news"
 	}
 }
