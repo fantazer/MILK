@@ -17,6 +17,12 @@ body
 	line-height 1.2
 	letter-spacing 0.01em
 
+p
+	color #6d6680
+	margin: 0
+	margin-bottom: 25px
+	line-height: 1.6
+
 .main-cont
 	center(1200px,10px)
 
@@ -661,3 +667,369 @@ body
 //.list-el__price
 //.list-el__arrow
 //.icon
+
+
+
+.detail
+	@extend .card
+	background: white
+	margin-bottom: 20px
+	margin-top: -140px
+.header-back
+	flex(mid)
+	padding: 25px 0
+	border-bottom 1px solid #d4cee1
+	&:hover
+		.icon
+			fill darken(#9388af,20)
+		.header-back__text
+			color darken(#9388af,20)
+.header-back__icon
+	.icon
+		tr(all)
+		size 20px
+		fill #9388af
+		margin-right: 15px
+.header-back__text
+	tr(all)
+	color #9388af
+	font-size: 20px
+.detail__content
+	padding: 35px 6% 110px 6%
+.detail__title
+	@extend .page-title
+	text-align: center
+	padding: 0
+	margin-bottom: 55px
+.detail__wrap
+	f()
+	justify-content: space-between
+.detail__img
+	width: 35%
+.detail__img-el
+	width: 100%
+	padding: 50% 20%
+	bg-full()
+	margin-top: 15%
+.detail__info
+	width: 50%
+.detail_text
+	@extend .type--main
+	opacity 0.8
+	color #6d6680
+	line-height: 1.6
+	margin-bottom: 40px
+.detail__descr
+	margin-bottom: 60px
+.detail-row
+	margin-bottom: 20px
+.detail-row__title
+	display table-cell
+	white-space nowrap
+	@extend .type--main
+.detail-row__dot
+	display table-cell
+	border-bottom 1px dotted gray
+	width 100%
+	opacity .3
+.detail-row__value
+	display table-cell
+	white-space nowrap
+	opacity 0.8
+	color #6d6680
+	font-family Roboto
+	@extend .type--main
+
+.detail__get
+	display: inline-block
+	up()
+
+.content--up
+	.head
+		height: 360px
+
+
+.news
+	display grid
+	grid-template-columns: repeat(3, 1fr)
+	grid-gap: 20px
+.news-el
+	@extend .card
+	tr(all)
+	cp()
+	overflow hidden
+	background: white
+	&:hover
+		transform scale(1.03)
+.news-el__content
+	padding: 35px 35px 70px 35px
+//.news-el__cont
+.news-el__img
+	width: 100%
+.news-el__date
+	color #a7a0b5
+	font-family Roboto
+	@extend .type--sm
+	margin-bottom: 25px
+.news-el__img-el
+	bg-full()
+	background-size: cover
+	padding: 40%
+.news-el__title
+	@extend .type--md
+	font-size: 26px
+	margin-bottom: 20px
+.news-el__descr
+	opacity 0.8
+	color #6d6680
+	@extend .type--main
+	line-height: 1.6
+
+.page-title--head
+	padding-top: 0
+
+.news-el--long
+	grid-column: 1/3
+	.news-el__img-el
+		padding: 19.5%
+
+.detail__date
+	@extend .type--sm
+	up()
+	color #a7a0b5
+
+.detail--news
+	.detail__title
+		text-align: left
+	.detail__img
+		width: 48%
+	.detail__img-el
+		margin-top: 0
+
+.cart__title
+	@extend .page-title
+
+.cart
+	f()
+	justify-content:space-between
+	align-items: flex-start
+.cart-wrap
+	width: 68%
+.cart__list
+	@extend .card
+	background: white
+	padding: 40px 40px 55px 40px
+	margin-bottom: 75px
+.cart__el
+	flex(between)
+.cart__el
+	&:first-child
+		margin-top: -20px
+	f()
+	justify-content: space-between
+	padding: 25px 0px 25px 0
+	border-bottom 1px solid #e3e3e3
+.cart__img
+	size 100px
+	bg-full()
+	margin-right: 10%
+.cart__content
+	@extend .type--main
+	width: 45%
+	line-height: 1.6
+.cart__price
+	margin-top: 20px
+.basket__el-price
+	color #6d6680
+.basket__el-incr
+	margin-top: auto
+//.cart__img
+//.cart__img-el
+//.cart__content
+//.cart__descr
+//.cart__price
+.cart__icnr
+	margin-left:auto
+
+.cart-get
+	flex(mid)
+	margin-top: 35px
+	.btn--light
+		margin-right: 20px
+.cart__total
+	@extend .card
+	background: white
+	width: 30%
+	position: relative
+	overflow hidden
+//.wave-bg
+//.head-wave
+.cart__total-head
+	padding: 50px 0px 70px 0
+	background-color: #7d5dcf;
+	background-image: linear-gradient(to top, rgba(104, 75, 212, 0.64) 0%, rgba(157, 119, 195, 0.64) 100%);
+	position: relative
+.cart__total-title
+	text-align: center
+	up()
+	color #ac8bff
+	font-family Pusia
+	@extend .type--md
+	margin-bottom: 40px
+.cart__val
+	flex(mid)
+.cart__cost
+	color #ffffff
+	font-family Pusia
+	font-size 50px
+	text-transform uppercase
+	letter-spacing 5px
+.cart__text
+	color #ffffff
+	font-family Pusia
+	@extend .type--main
+	margin-top: 4px
+	margin-left: 5px
+.cart__total-get
+	flex(mid)
+	padding: 40px 0
+	.btn--md
+		width: 250px
+//.btn--icon
+//.nav-icon
+.cart-wave
+	position: absolute
+	width: 100%
+	height: 30px
+	left: 0px
+	bottom: 0
+	background-image: url(../img/footer.svg)
+	background-size:cover
+
+.cart-deliver
+	flex(between)
+	padding: 50px 0
+	border-top 1px solid #e3e3e3
+	border-bottom 1px solid #e3e3e3
+.cart-deliver-img
+	width: 30%
+	margin-right: 5%
+.cart-deliver-cont
+	width: 60%
+.cart-deliver-title
+	color $title-color
+	font-family Pusia
+	font-size 28px
+	margin-bottom: 10px
+.cart-deliver-text
+	@extend .type--main
+	line-height: 1.6
+
+
+
+.lk
+	f()
+	justify-content:space-between
+	align-items: flex-start
+.lk__title
+	@extend .page-title
+.lk-wrap
+	width: 66%
+.lk__list
+	@extend .card
+	background: white
+	padding: 40px 40px 55px 40px
+	margin-bottom: 75px
+.lk__el
+	flex(between)
+.lk__el
+	&:first-child
+		margin-top: -20px
+	f()
+	justify-content: space-between
+	padding: 25px 0px 25px 0
+	border-bottom 1px solid #e3e3e3
+.lk__img
+	size 100px
+	bg-full()
+	margin-right: 10%
+.lk__content
+	@extend .type--main
+	width: 45%
+	line-height: 1.6
+	color #6d6680
+//.lk__price
+
+.basket__el-price
+	color #6d6680
+.basket__el-incr
+	margin-top: auto
+
+.lk__val
+	margin-left:auto
+	color #6d6680
+.lk-get
+	flex(mid)
+	margin-top: 35px
+	.btn--light
+		margin-right: 20px
+
+.lk__header
+	f()
+	justify-content: space-between
+	align-items: flex-start
+.lk__header-title
+	@extend .type--md
+	up()
+.lk__info
+	margin-left: auto
+.lk__info-text
+	text-align: right
+	color #372f4b
+	line-height: 1.6
+
+.profil
+	width: 32%
+	@extend .card
+	background: white
+	padding: 50px 0 60px 0
+	flex(mid)
+	fl()
+.profil__avatar
+	flex(mid)
+	round()
+	background: #f2eff8
+	size 170px
+	margin-bottom: 30px
+	.icon
+		size 80px
+		fill #d7d2e0
+
+.profil__surname
+	@extend .type--md
+	up()
+	margin-bottom: 5px
+.profil__name
+	@extend .type--md
+	up()
+	margin-bottom: 20px
+.profil__date
+	color #6d6680
+	@extend .type--main
+	margin-bottom: 30px
+.profil__phone
+	opacity 0.8
+	color #6d6680
+	@extend .type--main
+	margin-bottom: 5px
+.profil__mail
+	opacity 0.8
+	color #6d6680
+	@extend .type--main
+	margin-bottom: 40px
+.profil__adress
+	opacity 0.8
+	color #6d6680
+	@extend .type--main
+	margin-bottom: 40px
+//.profil__edit

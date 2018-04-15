@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<!--create by ANATOLY KUZNETSOV-->
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="format-detection" content="telephone=no" />
+		<!--colors-tabs-->
+		<meta name="theme-color" content="#000" />
+		<meta name="msapplication-navbutton-color" content="#000" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+		<!--icons
+	link(rel="shortcut icon" href="img/fav/favicon.ico")
+	link(rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-touch-icon-57x57.png")
+	link(rel="apple-touch-icon" sizes="60x60" href="img/fav/apple-touch-icon-60x60.png")
+	link(rel="apple-touch-icon" sizes="72x72" href="img/fav/apple-touch-icon-72x72.png")
+	link(rel="apple-touch-icon" sizes="76x76" href="img/fav/apple-touch-icon-76x76.png")
+	link(rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-touch-icon-114x114.png")
+	link(rel="apple-touch-icon" sizes="120x120" href="img/fav/apple-touch-icon-120x120.png")
+	link(rel="apple-touch-icon" sizes="144x144" href="img/fav/apple-touch-icon-144x144.png")
+	link(rel="apple-touch-icon" sizes="152x152" href="img/fav/apple-touch-icon-152x152.png")
+	link(rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon-180x180.png")
+	meta(name="apple-mobile-web-app-capable" content="yes")
+	meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+	meta(name="apple-mobile-web-app-title" content="My App")
+	link(rel="yandex-tableau-widget" href="img/fav/yandex-browser-manifest.json")
+	link(rel="icon" type="image/png" sizes="228x228" href="img/fav/coast-228x228.png")
+	link(rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png")
+	link(rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png")
+	link(rel="manifest" href="img/fav/manifest.json")
+	meta(name="mobile-web-app-capable" content="yes")
+	meta(name="theme-color" content="#020307")
+	meta(name="application-name" content="My App")
+	meta(name="msapplication-TileColor" content="#020307")
+	meta(name="msapplication-TileImage" content="img/fav/mstile-144x144.png")
+	meta(name="msapplication-config" content="img/fav/browserconfig.xml")
+	
+	-->
+		<!--SEO-->
+		<title>Document</title>
+		<meta name="description" itemprop="description" content="" />
+		<link rel="stylesheet" href="css/vendor.css">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-edit.css" />
+	</head>
+	<!-- mixin nameMixin()-->
+	<!-- - var args = Array.prototype.slice.call(arguments)-->
+	<!-- - for item in args-->
+
+	<body>
+		<div class="content content--up">
+			<!--block header-->
+			<div class="head">
+				<div class="wave-bg"></div>
+				<div class="head-wave"></div>
+				<div class="main-cont">
+					<div class="header">
+						<div class="header-phone">
+							<div class="header-phone__icon">
+								<svg class="icon">
+									<use xlink:href="#phone"></use>
+								</svg>
+							</div>
+							<div class="header-phone__info">
+								<a class="header-phone__numb" href="tel:8 800 333 86 63">8 800 333 86 63</a>
+								<div class="header-phone__callback modal-get" data-modal="TEMPLATE">Обратный звонок</div>
+							</div>
+						</div>
+						<a class="header-logo" href="/">
+							<svg class="icon">
+								<use xlink:href="#logo"></use>
+							</svg>
+						</a>
+						<div class="header-personal">
+							<div class="header-login">
+								<div class="header-login__icon">
+									<svg class="icon">
+										<use xlink:href="#profile"></use>
+									</svg>
+								</div>
+								<!--.header-basket.header-basket--empty-->
+								<div class="header-basket">
+									<div class="header-basket__icon">
+										<svg class="icon">
+											<use xlink:href="#cart"></use>
+										</svg>
+									</div>
+									<div class="header-basket__price">2 220 руб.</div>
+									<div class="header-basket__val">12</div>
+									<div class="basket">
+										<div class="basket__title">моя корзина</div>
+										<div class="basket__list">
+											<div class="basket__el">
+												<a class="basket__el-img" href="#" style="background-image:url('img/item.png')"></a>
+												<a class="basket__el-inf" href="#">Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%</a>
+												<div class="basket__el-val">
+													<div class="basket__el-price">Цена: 350 руб.</div>
+													<div class="basket__el-incr">
+														<div class="elements-icr-block">
+															<div class="incr">
+																<div class="incr__minus incr__nav">
+																	<svg class="icon">
+																		<use xlink:href="#arrow-left"></use>
+																	</svg>
+																</div>
+																<div class="incr__val">
+																	<span>1</span>
+																	<div class="incr__val-coner">шт.</div>
+																</div>
+																<div class="incr__plus incr__nav">
+																	<svg class="icon">
+																		<use xlink:href="#arrow-right"></use>
+																	</svg>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="basket__el">
+												<a class="basket__el-img" href="#" style="background-image:url('img/item.png')"></a>
+												<a class="basket__el-inf" href="#">Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%</a>
+												<div class="basket__el-val">
+													<div class="basket__el-price">Цена: 350 руб.</div>
+													<div class="basket__el-incr">
+														<div class="elements-icr-block">
+															<div class="incr">
+																<div class="incr__minus incr__nav">
+																	<svg class="icon">
+																		<use xlink:href="#arrow-left"></use>
+																	</svg>
+																</div>
+																<div class="incr__val">
+																	<span>1</span>
+																	<div class="incr__val-coner">шт.</div>
+																</div>
+																<div class="incr__plus incr__nav">
+																	<svg class="icon">
+																		<use xlink:href="#arrow-right"></use>
+																	</svg>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="basket__el">
+												<a class="basket__el-img" href="#" style="background-image:url('img/item.png')"></a>
+												<a class="basket__el-inf" href="#">Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%</a>
+												<div class="basket__el-val">
+													<div class="basket__el-price">Цена: 350 руб.</div>
+													<div class="basket__el-incr">
+														<div class="elements-icr-block">
+															<div class="incr">
+																<div class="incr__minus incr__nav">
+																	<svg class="icon">
+																		<use xlink:href="#arrow-left"></use>
+																	</svg>
+																</div>
+																<div class="incr__val">
+																	<span>1</span>
+																	<div class="incr__val-coner">шт.</div>
+																</div>
+																<div class="incr__plus incr__nav">
+																	<svg class="icon">
+																		<use xlink:href="#arrow-right"></use>
+																	</svg>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="basket__el">
+												<a class="basket__el-img" href="#" style="background-image:url('img/item.png')"></a>
+												<a class="basket__el-inf" href="#">Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%</a>
+												<div class="basket__el-val">
+													<div class="basket__el-price">Цена: 350 руб.</div>
+													<div class="basket__el-incr">
+														<div class="elements-icr-block">
+															<div class="incr">
+																<div class="incr__minus incr__nav">
+																	<svg class="icon">
+																		<use xlink:href="#arrow-left"></use>
+																	</svg>
+																</div>
+																<div class="incr__val">
+																	<span>1</span>
+																	<div class="incr__val-coner">шт.</div>
+																</div>
+																<div class="incr__plus incr__nav">
+																	<svg class="icon">
+																		<use xlink:href="#arrow-right"></use>
+																	</svg>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="basket__el">
+												<a class="basket__el-img" href="#" style="background-image:url('img/item.png')"></a>
+												<a class="basket__el-inf" href="#">Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%</a>
+												<div class="basket__el-val">
+													<div class="basket__el-price">Цена: 350 руб.</div>
+													<div class="basket__el-incr">
+														<div class="elements-icr-block">
+															<div class="incr">
+																<div class="incr__minus incr__nav">
+																	<svg class="icon">
+																		<use xlink:href="#arrow-left"></use>
+																	</svg>
+																</div>
+																<div class="incr__val">
+																	<span>1</span>
+																	<div class="incr__val-coner">шт.</div>
+																</div>
+																<div class="incr__plus incr__nav">
+																	<svg class="icon">
+																		<use xlink:href="#arrow-right"></use>
+																	</svg>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="basket__total">2 220 руб.</div>
+										<div class="basket__get">
+											<a class="btn--md btn--light" href="#">В корзину</a>
+											<a class="btn--md btn--mark" href="#">оформить</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__nav-cont">
+					<div class="header__nav">
+						<a class="header__nav-el header__nav-el--active" href="#">Продукция</a>
+						<a class="header__nav-el" href="#">О молоке</a>
+						<a class="header__nav-el" href="#">Экспертное мнение</a>
+						<a class="header__nav-el" href="#">О доставке</a>
+						<a class="header__nav-el" href="#">Новости</a>
+						<a class="header__nav-el" href="#">Контакты</a>
+					</div>
+				</div>
+			</div>
+			<!--block header end-->
+			<div class="cont">
+				<div class="main-cont">
+					<div class="detail detail--news">
+						<a class="header-back" href="#">
+							<div class="header-back__icon">
+								<svg class="icon">
+									<use xlink:href="#arrow-left"></use>
+								</svg>
+							</div>
+							<div class="header-back__text">Назад в каталог</div>
+						</a>
+						<div class="detail__content">
+							<div class="detail__date">19 Октября 2017</div>
+							<div class="detail__title">Молочный успех - 2017</div>
+							<div class="detail__wrap">
+								<div class="detail__img">
+									<div class="detail__img-el" style="background-image:url('img/milk-item-2.jpg')"></div>
+								</div>
+								<div class="detail__info">
+									<div class="detail_text">
+										<p>В рамках Международной конференции ЕАЭС по производству и переработке молока проводился конкурс качества молочной продукции "Молочный успех - 2017", в котором приняли участие 29 предприятий из 18-ти регионов России, а также из Республики Беларусь.
+											На конкурс было представлено 124 образца молочной продукции по 15-ти номинациям.</p>
+										<p>По результатам оценки экспертного жюри "Молочная Культура" получила Гран-при в трех номинациях за: Молоко пастеризованное цельное 3,5-4,5%; Ряженку из цельного молока 3,5-4,5%; Простоквашу из цельного молока 3,5-4,5%.</p>
+										<p>Йогурт с лесными ягодами и гранолой был отмечен Дипломом Лауреата конкурса.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--block footer-->
+			<div class="footer-cont">
+				<div class="footer-wave"></div>
+				<div class="main-cont">
+					<div class="footer">
+						<div class="footer__info">
+							<div class="footer__info-text">© Милк Бутик. 2018. Все права защищены</div>
+							<a class="footer__info-offer" href="#">Публичная оферта</a>
+							<div class="footer-soc-row">
+								<a class="footer-soc-row__el" href="#">
+									<svg class="icon">
+										<use xlink:href="#soc-vk"></use>
+									</svg>
+								</a>
+								<a class="footer-soc-row__el" href="#">
+									<svg class="icon">
+										<use xlink:href="#soc-facebook"></use>
+									</svg>
+								</a>
+								<a class="footer-soc-row__el" href="#">
+									<svg class="icon">
+										<use xlink:href="#soc-instagram"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="footer__nav">
+							<a class="footer__nav-el" href="#">Молоко</a>
+							<a class="footer__nav-el" href="#">Десерты</a>
+							<a class="footer__nav-el" href="#">Кисломолочка</a>
+							<a class="footer__nav-el" href="#">Сметана</a>
+							<a class="footer__nav-el" href="#">О молоке</a>
+							<a class="footer__nav-el" href="#">Экспертное мнение</a>
+							<a class="footer__nav-el" href="#">О доставке</a>
+							<a class="footer__nav-el" href="#">Новости</a>
+						</div>
+						<div class="footer__cont">
+							<div class="footer__pay">
+								<div class="footer__pay-icon">
+									<svg class="icon">
+										<use xlink:href="#money"></use>
+									</svg>
+								</div>
+								<div class="footer__pay-text">Оплата картой онлайн</div>
+							</div>
+							<a class="footer__phone" href="tel:8 800 333 86 63">8 800 333 86 63</a>
+							<div class="footer__callback">Обратный звонок</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--block footer end-->
+		</div>
+		<!--block modals-->
+		<div class="modal-layer">
+			<div class="modal" data-modal="TEMPLATE">
+				<div class="modal-content">
+					<div class="modal-close">
+						<svg class="icon">
+							<use xlink:href="#close"></use>
+						</svg>
+					</div>
+					<div class="modal-head">
+						<div class="modal-head-wave"></div>
+						<div class="modal-title">Восстановление пароля!!!</div>
+					</div>
+					<div class="modal-info">
+						<form action="#">
+							<div class="input-row">
+								<div class="input-row-title">Ваш Email</div>
+								<input class="input" type="text" />
+							</div>
+							<div class="pass-text--mid">Мы отправим пароль на указанный вами email</div>
+							<div class="btn-row--mid">
+								<div class="btn--md btn--mark">
+									<div class="btn--icon">
+										<span>Отправить</span>
+										<svg class="nav-icon">
+											<use xlink:href="#arrow-right"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--block modals end-->
+		<script src="js/combined.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/script-edit.js"></script>
+	</body>
+
+</html>

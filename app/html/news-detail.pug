@@ -1,0 +1,31 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.content.content--up
+	+header()
+	.cont
+		.main-cont
+			.detail.detail--news
+				a(href="#").header-back
+					.header-back__icon
+						+icon("arrow-left","icon")
+					.header-back__text Назад в каталог
+				.detail__content
+					.detail__date 19 Октября 2017
+					.detail__title Молочный успех - 2017
+					.detail__wrap
+						.detail__img
+							.detail__img-el(style="background-image:url('img/milk-item-2.jpg')")
+						.detail__info
+							.detail_text
+								p В рамках Международной конференции ЕАЭС по производству и переработке молока проводился конкурс качества молочной продукции "Молочный успех - 2017", в котором приняли участие 29 предприятий из 18-ти регионов России, а также из Республики Беларусь. На конкурс было представлено 124 образца молочной продукции по 15-ти номинациям.
+
+								p По результатам оценки экспертного жюри "Молочная Культура" получила Гран-при в трех номинациях за: Молоко пастеризованное цельное 3,5-4,5%; Ряженку из цельного молока 3,5-4,5%; Простоквашу из цельного молока 3,5-4,5%.
+
+								p Йогурт с лесными ягодами и гранолой был отмечен Дипломом Лауреата конкурса.
+
+
+	+footer()
++modals()
+
+include ./block_html/_script.pug

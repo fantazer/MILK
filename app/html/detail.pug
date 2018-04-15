@@ -1,0 +1,66 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.content.content--up
+	+header()
+	.cont
+		.main-cont
+			.detail
+				a(href="#").header-back
+					.header-back__icon
+						+icon("arrow-left","icon")
+					.header-back__text Назад в каталог
+				.detail__content
+					.detail__title Йогурт с абрикосом,<br> миндалем и гранолой
+					.detail__wrap
+						.detail__img
+							.detail__img-el(style="background-image:url('img/item-md.png')")
+						.detail__info
+							.detail_text Состав йогурта: молоко цельное, концентрированный молочный белок, с использованием заквасочных микроорганизмов: термофильных молочнокислых стрептококков и болгарской молочнокислой палочки. Состав смеси зерновой запеченной «Гранола с изюмом»: хлопья овсяные, хлопья пшеничные, сахар, изюм, масло рапсовое, рис экструдированный, ядра семян подсолнечника, ядра семян тыквы, отруби овсяные, патока, соль. Продукт может содержать следы орехов, арахиса и кунжута.
+							.detail__descr
+								.detail-row
+									.detail-row__title Энергетическая ценность
+									.detail-row__dot
+									.detail-row__value от 60 до 70 ккал
+								.detail-row
+									.detail-row__title Масса нетто
+									.detail-row__dot
+									.detail-row__value 245 г
+
+								.detail-row
+									.detail-row__title Срок годности
+									.detail-row__dot
+									.detail-row__value 10 суток
+								.detail-row
+									.detail-row__title Температура хранения
+									.detail-row__dot
+									.detail-row__value 4±2 °С
+								.detail-row
+									.detail-row__title Количество в коробке
+									.detail-row__dot
+									.detail-row__value 6 шт.
+								.detail-row
+									.detail-row__title М.Д.Ж
+									.detail-row__dot
+									.detail-row__value 2,7-3,5 %
+							a(href="#").detail__get.btn--md.btn--mark
+								.btn--icon
+									span 120 руб.  Добавить
+									+icon("arrow-right","nav-icon")
+			.list
+				- for (var i=0;i<3;i++)
+					.list-el
+						.list-el__cont
+							.list-el__img
+								.list-el__img-el(style="background-image:url('img/item.png')")
+							.list-el__title Йогурт с абрикосом, миндалем и гранолой
+							.list-el__descr Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%
+						.list-el__get
+							.list-el__price 120 руб.
+							.list-el__text Добавить
+							.list-el__arrow
+								+icon("arrow-right","icon")
+	+footer()
++modals()
+
+include ./block_html/_script.pug

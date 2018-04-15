@@ -1,0 +1,29 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.content
+	+header()
+	.cont
+		.main-cont
+			.page-title.page-title--head Новости
+			.news
+				.news-el.news-el--long
+					.news-el__img
+						.news-el__img-el(style="background-image:url('img/milk-item-3.jpg')")
+					.news-el__content
+						.news-el__date 19 Октября 2017
+						.news-el__title Доить — это большое искусство
+						.news-el__descr Интервью газете ″Коммерсант″ Андрей Ионов рассказал о будущем своей фермы
+				- for (var i=0;i<10;i++)
+					a(href="#").news-el
+						.news-el__cont
+							.news-el__img
+								.news-el__img-el(style="background-image:url('img/milk-item-1.jpg')")
+							.news-el__content
+								.news-el__date 19 Октября 2017
+								.news-el__title Молочный успех - 2017
+								.news-el__descr Интервью газете ″Коммерсант″ Андрей Ионов рассказал о будущем своей фермы
+	+footer()
++modals()
+
+include ./block_html/_script.pug

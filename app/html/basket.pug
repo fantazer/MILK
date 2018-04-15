@@ -1,0 +1,49 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.content
+	+header()
+	.cont
+		.main-cont
+			a(href="#").header-back
+				.header-back__icon
+					+icon("arrow-left","icon")
+				.header-back__text Продолжить покупки
+			.cart__title Моя корзина
+			.cart
+				.cart-wrap
+					.cart__list
+						- for (var i=0;i<5;i++)
+							.cart__el
+								.cart__img(style="background-image:url('img/item.png')")
+								.cart__content
+									.cart__descr Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%
+									.cart__price Цена: 350 руб.
+								.cart__icnr
+									+incr()
+						.cart-get
+							a(href="#").btn--md.btn--light создать новую
+							a(href="#").btn--md.btn--mark повторить корзину
+					.cart-deliver
+						.cart-deliver-img
+							img(src="img/milk.svg", alt="")
+						.cart-deliver-cont
+							.cart-deliver-title Доставка и оплата
+							.cart-deliver-text Бесплатная доствка от 2 000 руб.<br> Наличный расчет или картой онлайн
+				.cart__total
+					.cart__total-head
+						.wave-bg
+						.cart-wave
+						.cart__total-title Сумма заказа:
+						.cart__val
+							.cart__cost 2 560
+							.cart__text руб.<br>неделя
+					.cart__total-get
+						a(href="#").btn--md.btn--mark
+							.btn--icon
+								span оформить
+								+icon("arrow-right","nav-icon")
+	+footer()
++modals()
+
+include ./block_html/_script.pug

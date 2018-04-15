@@ -99,12 +99,21 @@ $(document).ready(function(){
 			var count = parseInt($input.html()) - 1;
 			count = count < 1 ? 0 : count;
 			if(count == 0){
+				//header-basket--remove
 				$(this).closest('.item-el__info-get').removeClass('item-el__info-get--incr');
 				count += 1;
 
 				$(this).closest('.basket__el').slideUp(400, function() {
 			    $(this).remove();
 				});
+				//header-basket--remove===end
+
+				//cart-basket--remove
+				count += 1;
+				$(this).closest('.cart__el').slideUp(400, function() {
+			    $(this).remove();
+				});
+				//cart-basket--remove===end
 			}
 			cartScroll.perfectScrollbar('update');
 			$input.html(count);

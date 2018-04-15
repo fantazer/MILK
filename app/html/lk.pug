@@ -1,0 +1,46 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.content
+	+header()
+	.cont
+		.main-cont
+
+			.lk__title Личный кабинет
+			.lk
+				.profil
+					.profil__avatar
+						+icon("profile","icon")
+					.profil__surname Иванова
+					.profil__name александра
+					.profil__date 02.06.1982
+					.profil__phone т.: 8 923 098 9999
+					.profil__mail п.: Alex@mail.ru
+					.profil__adress ул. Малахова, дом3, кв 32
+					.profil__edit
+						a(href="#").btn--md.btn--disable редактировать
+				.lk-wrap
+					.lk__list
+						.lk__header
+							.lk__header-title Ваша корзина
+							.lk__info
+								.lk__info-text Доставка: каждую пятницу 10:00-12:00
+								.lk__info-text Подписка: с 20.06.2018 до 24.06.2018
+						- for (var i=0;i<5;i++)
+							.lk__el
+								.lk__img(style="background-image:url('img/item.png')")
+								.lk__content
+									.lk__descr Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%
+								.lk__val
+									.lk__numb 2 шт
+									.lk__price Цена: 350 руб.
+						.lk-get
+							a(href="#").btn--md.btn--light создать новую
+							a(href="#").btn--md.btn--mark повторить корзину
+
+
+
+	+footer()
++modals()
+
+include ./block_html/_script.pug

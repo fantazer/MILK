@@ -7,6 +7,12 @@
 	"page":{
 		"index":"index",
 		"list":"list",
-		"news":"news"
+		"news":"news",
+		"news-detail":"news-detail",
+		"detail":"detail",
+		"items":"items",
+		"basket":"basket",
+		"bonus":"bonus",
+		"lk":"lk"
 	}
 }

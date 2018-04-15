@@ -1,0 +1,36 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.content
+	+header()
+	.cont
+		.main-cont
+			.filter
+				.filter__el.filter__el--active Футболки
+				-
+					var items = [
+						'Сумки',
+						'Кружки',
+						'Брелоки',
+						'Сметана'
+					];
+				each item in items
+					a(href="#").filter__el #{item}
+			.page-title Десерты
+			.list
+				- for (var i=0;i<12;i++)
+					.list-el
+						.list-el__cont
+							.list-el__img
+								.list-el__img-el(style="background-image:url('img/cup.png')")
+							.list-el__title сувенирная кружка
+							.list-el__descr Цвет: Синий, Емкость: 250 мл
+						.list-el__get
+							.list-el__price 120 руб.
+							.list-el__text Добавить
+							.list-el__arrow
+								+icon("arrow-right","icon")
+	+footer()
++modals()
+
+include ./block_html/_script.pug
