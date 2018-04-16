@@ -1,5 +1,25 @@
 $(document).ready(function(){
 
+	//mobile select
+	$('.select-beauty').niceSelect();
+	//mobile select===end
+	//mobile-menu
+		$('.header-toggle').click(function(event){
+				event.stopPropagation();
+				$('.header__nav-cont').slideToggle("fast");
+				$(this).toggleClass("header-toggle--active");
+				$('body').toggleClass("fixbody");
+				$('head').toggleClass("head--open");
+				$('.head').toggleClass("head--openmenu");
+		});
+		$('.header__nav-cont').on("click", function (event) {
+			event.stopPropagation();
+		});
+		$(document).on("click", function () {
+				$('.header__nav-cont').hide();
+		});
+	//mobile-menu===end
+
 	//tab modal
 	var tabConstruct = function (elHead,elTab){
 		$("."+elHead).click(function () {
@@ -170,6 +190,10 @@ $(document).ready(function(){
 			$('.header-basket').click(function(){
 				$('body').toggleClass('close-body');
 			})
+			$('.basket--close').click(function(){
+				$('body').removeClass('close-body');
+				$('.basket').slideUp('slow');
+			})
 		}
 		//toggle cart===end
 
@@ -205,7 +229,7 @@ $(document).ready(function(){
 }
 
 	console.log(detectIE());
-	if (detectIE() <= 14 && detectIE()) {
+	if (detectIE() <= 11 && detectIE()) {
 		$('body').empty();
 		$('body').prepend('' +
 		 '<div class="old-browser">' +

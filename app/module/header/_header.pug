@@ -5,6 +5,12 @@ mixin header()
 		.head-wave
 		.main-cont
 			.header
+				.header-toggle
+					.header-toggle__menu
+						+icon("menu","icon")
+					.header-toggle__close
+						+icon("close","icon")
+
 				.header-phone
 					.header-phone__icon.modal-get(data-modal="callback")
 						+icon("phone","icon")
@@ -24,6 +30,8 @@ mixin header()
 							.header-basket__price 2 220 руб.
 							.header-basket__val 12
 							.basket
+								.basket--close
+									+icon("close","icon")
 								.basket__title моя корзина
 								.basket__list
 									- for (var i=0;i<5;i++)
@@ -52,4 +60,9 @@ mixin header()
 						];
 				each item in items
 					a(href="#").header__nav-el #{item}
+			.header-mobile-cont
+				.header-mobile-auth.modal-get(data-modal="enter")
+					+icon("profile","icon")
+				a(href="call:8 800 333 86 63").header-mobile-phone 8 800 333 86 63
+				.header-mobile-call.modal-get(data-modal="callback") Обратный звонок
 	//block header end

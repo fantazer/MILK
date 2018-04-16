@@ -16,8 +16,14 @@ include block_html/_include.pug
 					];
 				each item in items
 					a(href="#").filter__el #{item}
+			.filter-mobile
+				select.select-beauty
+					option Сумки
+					option Кружки
+					option Брелоки
+					option Сметана
 			.page-title Десерты
-			.list
+			.lists
 				- for (var i=0;i<12;i++)
 					.list-el
 						.list-el__cont
