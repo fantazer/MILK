@@ -6,16 +6,16 @@ mixin header()
 		.main-cont
 			.header
 				.header-phone
-					.header-phone__icon
+					.header-phone__icon.modal-get(data-modal="callback")
 						+icon("phone","icon")
 					.header-phone__info
 						a(href="tel:8 800 333 86 63").header-phone__numb 8 800 333 86 63
-						.header-phone__callback.modal-get(data-modal="TEMPLATE") Обратный звонок
+						.header-phone__callback.modal-get(data-modal="callback") Обратный звонок
 				a(href="/").header-logo
 					+icon("logo","icon")
 				.header-personal
 					.header-login
-						.header-login__icon
+						.header-login__icon.modal-get(data-modal="enter")
 							+icon("profile","icon")
 						//.header-basket.header-basket--empty
 						.header-basket

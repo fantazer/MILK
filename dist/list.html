@@ -6,37 +6,10 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="format-detection" content="telephone=no" />
-		<!--colors-tabs-->
 		<meta name="theme-color" content="#000" />
 		<meta name="msapplication-navbutton-color" content="#000" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="#000" />
-		<!--icons
-	link(rel="shortcut icon" href="img/fav/favicon.ico")
-	link(rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-touch-icon-57x57.png")
-	link(rel="apple-touch-icon" sizes="60x60" href="img/fav/apple-touch-icon-60x60.png")
-	link(rel="apple-touch-icon" sizes="72x72" href="img/fav/apple-touch-icon-72x72.png")
-	link(rel="apple-touch-icon" sizes="76x76" href="img/fav/apple-touch-icon-76x76.png")
-	link(rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-touch-icon-114x114.png")
-	link(rel="apple-touch-icon" sizes="120x120" href="img/fav/apple-touch-icon-120x120.png")
-	link(rel="apple-touch-icon" sizes="144x144" href="img/fav/apple-touch-icon-144x144.png")
-	link(rel="apple-touch-icon" sizes="152x152" href="img/fav/apple-touch-icon-152x152.png")
-	link(rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon-180x180.png")
-	meta(name="apple-mobile-web-app-capable" content="yes")
-	meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
-	meta(name="apple-mobile-web-app-title" content="My App")
-	link(rel="yandex-tableau-widget" href="img/fav/yandex-browser-manifest.json")
-	link(rel="icon" type="image/png" sizes="228x228" href="img/fav/coast-228x228.png")
-	link(rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png")
-	link(rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png")
-	link(rel="manifest" href="img/fav/manifest.json")
-	meta(name="mobile-web-app-capable" content="yes")
-	meta(name="theme-color" content="#020307")
-	meta(name="application-name" content="My App")
-	meta(name="msapplication-TileColor" content="#020307")
-	meta(name="msapplication-TileImage" content="img/fav/mstile-144x144.png")
-	meta(name="msapplication-config" content="img/fav/browserconfig.xml")
-	
-	-->
+		<link rel="shortcut icon" href="img/fav/favicon.ico" />
 		<!--SEO-->
 		<title>Document</title>
 		<meta name="description" itemprop="description" content="" />
@@ -57,14 +30,14 @@
 				<div class="main-cont">
 					<div class="header">
 						<div class="header-phone">
-							<div class="header-phone__icon">
+							<div class="header-phone__icon modal-get" data-modal="callback">
 								<svg class="icon">
 									<use xlink:href="#phone"></use>
 								</svg>
 							</div>
 							<div class="header-phone__info">
 								<a class="header-phone__numb" href="tel:8 800 333 86 63">8 800 333 86 63</a>
-								<div class="header-phone__callback modal-get" data-modal="TEMPLATE">Обратный звонок</div>
+								<div class="header-phone__callback modal-get" data-modal="callback">Обратный звонок</div>
 							</div>
 						</div>
 						<a class="header-logo" href="/">
@@ -74,7 +47,7 @@
 						</a>
 						<div class="header-personal">
 							<div class="header-login">
-								<div class="header-login__icon">
+								<div class="header-login__icon modal-get" data-modal="enter">
 									<svg class="icon">
 										<use xlink:href="#profile"></use>
 									</svg>
@@ -525,7 +498,7 @@
 								<div class="footer__pay-text">Оплата картой онлайн</div>
 							</div>
 							<a class="footer__phone" href="tel:8 800 333 86 63">8 800 333 86 63</a>
-							<div class="footer__callback">Обратный звонок</div>
+							<div class="footer__callback modal-get" data-modal="callback">Обратный звонок</div>
 						</div>
 					</div>
 				</div>
@@ -534,7 +507,7 @@
 		</div>
 		<!--block modals-->
 		<div class="modal-layer">
-			<div class="modal" data-modal="TEMPLATE">
+			<div class="modal" data-modal="pass">
 				<div class="modal-content">
 					<div class="modal-close">
 						<svg class="icon">
@@ -542,8 +515,9 @@
 						</svg>
 					</div>
 					<div class="modal-head">
+						<div class="wave-bg"></div>
 						<div class="modal-head-wave"></div>
-						<div class="modal-title">Восстановление пароля!!!</div>
+						<div class="modal-title">Восстановление пароля</div>
 					</div>
 					<div class="modal-info">
 						<form action="#">
@@ -553,7 +527,138 @@
 							</div>
 							<div class="pass-text--mid">Мы отправим пароль на указанный вами email</div>
 							<div class="btn-row--mid">
-								<div class="btn--md btn--mark">
+								<div class="btn--md btn--mark btn--modal">
+									<div class="btn--icon">
+										<span>Отправить</span>
+										<svg class="nav-icon">
+											<use xlink:href="#arrow-right"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="modal modal--auth" data-modal="enter">
+				<div class="modal-content">
+					<div class="modal-close">
+						<svg class="icon">
+							<use xlink:href="#close"></use>
+						</svg>
+					</div>
+					<div class="modal-head modal-head--tab">
+						<div class="wave-bg"></div>
+						<div class="modal-head-wave"></div>
+						<div class="modal-title__el modal-title__el--active" data-tab="enter">Вход</div>
+						<div class="modal-title__el" data-tab="reg">регистрация</div>
+					</div>
+					<div class="modal-info">
+						<div class="modal-tab modal-tab--active" data-tab="enter">
+							<form action="#">
+								<div class="input-row">
+									<div class="input-row-title">Ваш Email</div>
+									<input class="input" type="text" />
+								</div>
+								<div class="input-row">
+									<div class="input-row-title">Ваш Пароль</div>
+									<input class="input" type="password" />
+								</div>
+								<div class="pass-fogot modal-get" data-modal="pass">Забыли пароль?</div>
+								<div class="btn-row--mid">
+									<div class="btn--md btn--mark btn--modal">
+										<div class="btn--icon">
+											<span>войти</span>
+											<svg class="nav-icon">
+												<use xlink:href="#arrow-right"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="modal-tab" data-tab="reg">
+							<form action="#">
+								<div class="input-row">
+									<div class="input-row-title">Ваше имя</div>
+									<input class="input" type="text" />
+								</div>
+								<div class="input-row">
+									<div class="input-row-title">Ваш Email</div>
+									<input class="input" type="text" />
+								</div>
+								<div class="input-row-half">
+									<div class="input-row-half__el">
+										<div class="input-row-title">Пароль</div>
+										<input class="input" type="password" />
+									</div>
+									<div class="input-row-half__el">
+										<div class="input-row-title">Повторите пароль</div>
+										<input class="input" type="password" />
+									</div>
+								</div>
+								<div class="btn-row--mid">
+									<div class="btn--md btn--mark btn--modal">
+										<div class="btn--icon">
+											<span>зарегистрироваться</span>
+											<svg class="nav-icon">
+												<use xlink:href="#arrow-right"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</form>
+							<div class="personal-text">Нажимая кнопку “Зарегистрироваться” вы дайте согласие на обработку персональных данных</div>
+						</div>
+						<div class="modal-soc">
+							<div class="modal-soc-text">Или войдите через соц.сети</div>
+							<div class="modal-soc-row">
+								<div class="modal-soc-el modal-soc-el--inst">
+									<svg class="icon">
+										<use xlink:href="#soc-instagram"></use>
+									</svg>
+								</div>
+								<div class="modal-soc-el modal-soc-el--twitter">
+									<svg class="icon">
+										<use xlink:href="#soc-twitter"></use>
+									</svg>
+								</div>
+								<div class="modal-soc-el modal-soc-el--fb">
+									<svg class="icon">
+										<use xlink:href="#soc-facebook"></use>
+									</svg>
+								</div>
+								<div class="modal-soc-el modal-soc-el--vk">
+									<svg class="icon">
+										<use xlink:href="#soc-vk"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal" data-modal="callback">
+				<div class="modal-content">
+					<div class="modal-close">
+						<svg class="icon">
+							<use xlink:href="#close"></use>
+						</svg>
+					</div>
+					<div class="modal-head">
+						<div class="wave-bg"></div>
+						<div class="modal-head-wave"></div>
+						<div class="modal-title">Обратный звонок</div>
+					</div>
+					<div class="modal-info">
+						<form action="#">
+							<div class="input-row">
+								<div class="input-row-title">Ваш телефон</div>
+								<input class="input" type="text" />
+							</div>
+							<div class="pass-text--mid">Мы перезвоним в ближайшее время.</div>
+							<div class="btn-row--mid">
+								<div class="btn--md btn--mark btn--modal">
 									<div class="btn--icon">
 										<span>Отправить</span>
 										<svg class="nav-icon">

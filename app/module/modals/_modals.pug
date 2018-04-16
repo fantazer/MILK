@@ -1,13 +1,14 @@
 mixin modals()
 	//block modals
 	.modal-layer
-		.modal(data-modal="TEMPLATE")
+		.modal(data-modal="pass")
 			.modal-content
 				.modal-close
 					+icon("close","icon")
 				.modal-head
+					.wave-bg
 					.modal-head-wave
-					.modal-title Восстановление пароля!!!
+					.modal-title Восстановление пароля
 				.modal-info
 					form(action="#")
 						.input-row
@@ -15,7 +16,82 @@ mixin modals()
 							input(type="text").input
 						.pass-text--mid Мы отправим пароль на указанный вами email
 						.btn-row--mid
-							.btn--md.btn--mark
+							.btn--md.btn--mark.btn--modal
+								.btn--icon
+									span Отправить
+									+icon("arrow-right","nav-icon")
+		.modal.modal--auth(data-modal="enter")
+			.modal-content
+				.modal-close
+					+icon("close","icon")
+				.modal-head.modal-head--tab
+					.wave-bg
+					.modal-head-wave
+					.modal-title__el.modal-title__el--active(data-tab="enter") Вход
+					.modal-title__el(data-tab="reg") регистрация
+				.modal-info
+					.modal-tab.modal-tab--active(data-tab="enter")
+						form(action="#")
+							.input-row
+								.input-row-title Ваш Email
+								input(type="text").input
+							.input-row
+								.input-row-title Ваш Пароль
+								input(type="password").input
+							.pass-fogot.modal-get(data-modal="pass") Забыли пароль?
+							.btn-row--mid
+								.btn--md.btn--mark.btn--modal
+									.btn--icon
+										span войти
+										+icon("arrow-right","nav-icon")
+					.modal-tab(data-tab="reg")
+						form(action="#")
+							.input-row
+								.input-row-title Ваше имя
+								input(type="text").input
+							.input-row
+								.input-row-title Ваш Email
+								input(type="text").input
+							.input-row-half
+								.input-row-half__el
+									.input-row-title Пароль
+									input(type="password").input
+								.input-row-half__el
+									.input-row-title Повторите пароль
+									input(type="password").input
+							.btn-row--mid
+								.btn--md.btn--mark.btn--modal
+									.btn--icon
+										span зарегистрироваться
+										+icon("arrow-right","nav-icon")
+						.personal-text Нажимая кнопку “Зарегистрироваться” вы дайте согласие на обработку персональных данных
+					.modal-soc
+						.modal-soc-text Или войдите через соц.сети
+						.modal-soc-row
+							.modal-soc-el.modal-soc-el--inst
+								+icon("soc-instagram","icon")
+							.modal-soc-el.modal-soc-el--twitter
+								+icon("soc-twitter","icon")
+							.modal-soc-el.modal-soc-el--fb
+								+icon("soc-facebook","icon")
+							.modal-soc-el.modal-soc-el--vk
+								+icon("soc-vk","icon")
+		.modal(data-modal="callback")
+			.modal-content
+				.modal-close
+					+icon("close","icon")
+				.modal-head
+					.wave-bg
+					.modal-head-wave
+					.modal-title Обратный звонок
+				.modal-info
+					form(action="#")
+						.input-row
+							.input-row-title Ваш телефон
+							input(type="text").input
+						.pass-text--mid Мы перезвоним в ближайшее время.
+						.btn-row--mid
+							.btn--md.btn--mark.btn--modal
 								.btn--icon
 									span Отправить
 									+icon("arrow-right","nav-icon")
