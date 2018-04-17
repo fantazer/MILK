@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='ru'>
 	<!--create by ANATOLY KUZNETSOV-->
 
 	<head>

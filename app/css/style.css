@@ -991,6 +991,11 @@ p {
     background-position: bottom;
   }
 }
+@media only screen and (max-width: 640px) {
+  .head-wave {
+    background-size: 120%;
+  }
+}
 .header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1187,6 +1192,17 @@ p {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    highlight-color: rgba(255,255,255,0);
+  }
+  .header-basket:focus {
+    outline: none !important;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -1449,14 +1465,15 @@ p {
 }
 @media only screen and (max-width: 640px) {
   .basket__list {
-    max-height: -webkit-calc(100vh - 270px);
-    max-height: calc(100vh - 270px);
+    max-height: -webkit-calc(100vh - 310px);
+    max-height: calc(100vh - 310px);
   }
 }
 .basket--close {
   position: absolute;
   top: 20px;
   right: 20px;
+  z-index: 10;
 }
 @media only screen and (min-width: 641px) {
   .basket--close {
@@ -1727,6 +1744,11 @@ p {
   padding: 60px 0;
   overflow-x: hidden;
 }
+@media only screen and (max-width: 640px) {
+  .modal-layer-show {
+    padding: 0;
+  }
+}
 .modal {
   -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.24);
           box-shadow: 0 2px 4px rgba(0,0,0,0.24);
@@ -1768,7 +1790,7 @@ p {
   .modal-content {
     width: initial;
     max-width: 320px;
-    min-width: 95vw;
+    min-width: 98vw;
   }
 }
 .modal-close {
@@ -1776,10 +1798,11 @@ p {
   top: -40px;
   right: -40px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 640px) {
   .modal-close {
-    top: -40px;
-    right: -40px;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
   }
 }
 .modal-close:hover {
@@ -1816,8 +1839,21 @@ p {
   position: relative;
   margin-bottom: -2px;
 }
+@media only screen and (max-width: 640px) {
+  .modal-head {
+    background-image: none;
+  }
+  .modal-head .wave-bg {
+    display: none;
+  }
+}
 .modal-info {
   padding: 30px 50px 70px 50px;
+}
+@media only screen and (max-width: 640px) {
+  .modal-info {
+    padding: 20px;
+  }
 }
 .input-row input {
   width: 100%;
@@ -2464,7 +2500,7 @@ p {
   .detail__title,
   .cart__title,
   .lk__title {
-    font-size: 24px;
+    font-size: 22px;
     padding: 20px 0;
   }
 }
@@ -2488,6 +2524,7 @@ p {
     max-width: 360px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 15px;
   }
 }
 .list-el {
@@ -2587,6 +2624,11 @@ p {
 .header-back:hover .header-back__text {
   color: #60547d;
 }
+@media only screen and (max-width: 640px) {
+  .header-back--light {
+    padding-top: 0;
+  }
+}
 .header-back__icon .icon {
   -webkit-transition: all 0.4s;
           transition: all 0.4s;
@@ -2662,6 +2704,13 @@ p {
     margin: 20px 0;
     background-size: contain;
     padding: 20%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .detail__img-el {
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
   }
 }
 .detail__info {
@@ -2879,6 +2928,11 @@ p {
     background-size: cover;
   }
 }
+@media only screen and (max-width: 640px) {
+  .cart__title {
+    padding: 40px 0;
+  }
+}
 .cart {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3027,7 +3081,7 @@ p {
 }
 @media only screen and (max-width: 768px) {
   .cart__descr {
-    max-width: 300px;
+    max-width: 270px;
   }
 }
 .cart__icnr {
@@ -3541,6 +3595,13 @@ p {
 .btn--modal {
   font-size: 18px;
 }
+@media only screen and (max-width: 640px) {
+  .btn--modal {
+    font-size: 14px;
+    width: 100%;
+    padding: 20px;
+  }
+}
 .modal-head--tab {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3639,6 +3700,11 @@ p {
   margin-top: 55px;
   padding-top: 30px;
 }
+@media only screen and (max-width: 640px) {
+  .modal-soc {
+    margin-top: 30px;
+  }
+}
 .modal-soc-text {
   opacity: 0.8;
   color: #6d6680;
@@ -3680,6 +3746,12 @@ p {
   height: 68px;
   margin: 0 6px;
 }
+@media only screen and (max-width: 640px) {
+  .modal-soc-el {
+    width: 50px;
+    height: 50px;
+  }
+}
 .modal-soc-el:hover {
   cursor: pointer;
 }
@@ -3692,6 +3764,12 @@ p {
   width: 30px;
   height: 30px;
   fill: #fff;
+}
+@media only screen and (max-width: 640px) {
+  .modal-soc-el .icon {
+    width: 22px;
+    height: 22px;
+  }
 }
 .modal-soc-el--inst {
   background-color: #ac28a1;

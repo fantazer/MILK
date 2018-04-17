@@ -183,18 +183,18 @@ $(document).ready(function(){
 			event.stopPropagation();
 		});
 		$(document).on("click", function () {
-				$('body').removeClass('close-body');
+				$('body').removeClass('fixbody');
 				$('.basket').slideUp('slow');
 		});
 		if($(window).width()<=640){
 			$('.header-basket').click(function(){
-				$('body').toggleClass('close-body');
-			})
-			$('.basket--close').click(function(){
-				$('body').removeClass('close-body');
-				$('.basket').slideUp('slow');
-			})
+				$('body').addClass('fixbody');
+			});
 		}
+		$('.basket--close').click(function(){
+				$('body').removeClass('fixbody');
+				$('.basket').slideUp('slow');
+		});
 		//toggle cart===end
 
 	/* ###### For only ies  ######*/
