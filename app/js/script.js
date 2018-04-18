@@ -151,6 +151,10 @@ $(document).ready(function(){
 				//cart-basket--remove
 				$(this).closest('.cart__el').slideUp(400, function() {
 			    $(this).remove();
+			    if($('.cart__el').length < 1){
+			    	$('.cart__empty-wrap').show();
+			    	$('.cart-get').hide();
+			    }
 				});
 				//cart-basket--remove===end
 			}

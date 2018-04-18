@@ -67,7 +67,8 @@ p
 	left: 0px
 	bottom: 0
 	background-image: url(../img/head.svg)
-	background-size:cover
+	background-size:130%
+	background-position: -1px 0
 .header
 	+below(640px)
 		margin-bottom: 10px
@@ -407,7 +408,7 @@ p
 	top 0
 	left 0
 	visibility: hidden
-	transition all 1s // duration for fade
+	//transition all 1s // duration for fade
 	opacity 0
 	overflow auto
 	background: rgba(0,0,0,0.5)
@@ -427,7 +428,7 @@ p
 		padding: 0
 	visibility: visible
 	opacity 1
-	transition opacity 1.4s
+	//transition opacity 1.4s
 	padding: 60px 0
 	overflow-x hidden
 .modal
@@ -451,7 +452,7 @@ p
 	margin:0
 	opacity: 1
 	width: auto
-	transition all 1.2s
+	//transition all 1.2s
 
 .modal-content
 	+below(768px)
@@ -522,7 +523,7 @@ p
 
 .modal-blur
 	filter blur(20px)
-	tr(all)
+	//tr(all)
 
 .modal-head-wave
 	+below(768px)
@@ -533,9 +534,9 @@ p
 	left: 0px
 	bottom: -1px
 	background-image: url(../img/footer.svg)
-	background-size:contain
+	background-size:120%
 	background-repeat: no-repeat
-
+	background-position: -2px 0
 
 .cont
 	+below(768px)
@@ -1668,3 +1669,18 @@ select.select-beauty
 	border 1px solid $border-color
  .nice-select.open
 	border-radius 20px 20px 0 0
+
+.cart__empty
+	flex(mid)
+	fl()
+
+.cart__empty-wrap
+	display: none
+.cart__empty__text
+	text-align: center
+	color #6d6680
+	font-family Roboto
+	font-size 20px
+	font-weight 400
+	line-height: 1.6
+	margin: 60px 0

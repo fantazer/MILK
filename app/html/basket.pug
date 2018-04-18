@@ -24,6 +24,12 @@ include block_html/_include.pug
 						.cart-get
 							a(href="#").btn--md.btn--light создать новую
 							a(href="#").btn--md.btn--mark повторить корзину
+						.cart__empty-wrap
+							.cart__empty
+								.cart__empty__img
+									img(src="img/empty-cart.png", alt="")
+								.cart__empty__text Ваша корзина пуста, подходящее <br> время для покупок =)
+								a(href="#").btn--md.btn--mark.cart__empty-get перейти в каталог
 					.cart-deliver
 						.cart-deliver-img
 							img(src="img/milk.svg", alt="")
