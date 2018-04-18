@@ -36,6 +36,7 @@ mixin header()
 								.basket__title моя корзина
 								.basket__list
 									- for (var i=0;i<5;i++)
+										//обреж строку описания товара с ... чтобы по высоте было примерно 70px
 										.basket__el
 											a(href="#" style="background-image:url('img/item.png')").basket__el-img
 											a(href="#").basket__el-inf Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%
