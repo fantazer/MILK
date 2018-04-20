@@ -1,0 +1,70 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.content.content--up
+	+header()
+	.cont
+		.main-cont
+			.block-up
+				.header-up
+					.header-up__text Доставка
+				.treaple
+					.treaple__el
+						.deliver-text по субботам <br> и пятницам
+					.treaple__el
+						.deliver-text с 12:00 <br> до 16:00
+					.treaple__el
+						.deliver-date
+							.deliver-date__icon
+								+icon("info","icon")
+							.deliver-date__text День доставки соглосовывается при заказе
+				.deliver-map
+			.deliver
+				.deliver__col
+					.deliver__title Способы оплаты
+					.deliver__el
+						.deliver__el-icon
+							+icon("coins","icon")
+						.deliver__el-cont
+							.deliver__el-title Наличными
+							.deliver__el-text Оплата наличными курьеру или в ресторане при получении заказа.
+					.deliver__el
+						.deliver__el-icon
+							+icon("card","icon")
+						.deliver__el-cont
+							.deliver__el-title Банковской картой онлайн
+							.deliver__el-text При оформлении заказа на сайте (сервис доступен для карт: Visa, MasterCard)
+					.deliver__el
+						.deliver__el-icon
+							+icon("rupse","icon")
+						.deliver__el-cont
+							.deliver__el-title Банковской картой курьеру
+							.deliver__el-text Оплата заказа банковской картой при получении. Принимаются банковские карты MasterCard (кроме Maestro) и Visa (кроме Visa Electron).
+				.deliver__col
+					.deliver__title вопросы по качеству доставки
+					form(action="#")
+						.input-row
+							.input-row-title Ваше имя
+							input(type="text").input
+						
+						.input-row-half
+							.input-row-half__el
+								.input-row-title Телефон
+								input(type="text").input
+							.input-row-half__el
+								.input-row-title Дата доставки
+								input(type="text").input
+						.input-row
+							.input-row-title Ваше сообщение
+							textarea(name="text", cols="30", rows="10").input
+
+						.deliver__get
+							.deliver__get-text Нажимая кнопку “Зарегистрироваться” вы дайте согласие на обработку персональных данных
+							.btn--md.btn--mark
+								.btn--icon
+									span отправить
+									+icon("arrow-right","nav-icon")
+	+footer()
++modals()
+
+include ./block_html/_script.pug

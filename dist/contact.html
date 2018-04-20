@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang='ru'>
+	<!--create by ANATOLY KUZNETSOV-->
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="theme-color" content="#000" />
+		<meta name="msapplication-navbutton-color" content="#000" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+		<link rel="shortcut icon" href="img/fav/favicon.ico" />
+		<!--SEO-->
+		<title>Document</title>
+		<meta name="description" itemprop="description" content="" />
+		<link rel="stylesheet" href="css/vendor.css">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-edit.css" />
+	</head>
+	<!-- mixin nameMixin()-->
+	<!-- - var args = Array.prototype.slice.call(arguments)-->
+	<!-- - for item in args-->
+
+	<body>
+		<div class="content content--up">
+			<!--block header-->
+			<div class="head">
+				<div class="wave-bg"></div>
+				<div class="head-wave"></div>
+				<div class="main-cont">
+					<div class="header">
+						<div class="header-toggle">
+							<div class="header-toggle__menu">
+								<svg class="icon">
+									<use xlink:href="#menu"></use>
+								</svg>
+							</div>
+							<div class="header-toggle__close">
+								<svg class="icon">
+									<use xlink:href="#close"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="header-phone">
+							<div class="header-phone__icon modal-get" data-modal="callback">
+								<svg class="icon">
+									<use xlink:href="#phone"></use>
+								</svg>
+							</div>
+							<div class="header-phone__info">
+								<a class="header-phone__numb" href="tel:8 800 333 86 63">8 800 333 86 63</a>
+								<div class="header-phone__callback modal-get" data-modal="callback">Обратный звонок</div>
+							</div>
+						</div>
+						<a class="header-logo" href="/">
+							<svg class="icon">
+								<use xlink:href="#logo"></use>
+							</svg>
+						</a>
+						<div class="header-personal">
+							<div class="header-login">
+								<div class="header-login__icon modal-get" data-modal="enter">
+									<!--для не залогиненного поменять иконку на #login-->
+									<svg class="icon">
+										<use xlink:href="#profile"></use>
+									</svg>
+								</div>
+								<!--.header-basket.header-basket--empty-->
+								<div class="header-basket">
+									<div class="header-basket__icon">
+										<svg class="icon">
+											<use xlink:href="#cart"></use>
+										</svg>
+									</div>
+									<div class="header-basket__price">2 220 руб.</div>
+									<div class="header-basket__val">12</div>
+									<div class="basket">
+										<div class="basket--close">
+											<svg class="icon">
+												<use xlink:href="#close"></use>
+											</svg>
+										</div>
+										<div class="basket__title">моя корзина</div>
+										<div class="basket__list">
+											<!--обреж строку описания товара с ... чтобы по высоте было примерно 70px-->
+											<div class="basket__el">
+												<a class="basket__el-img" href="#" style="background-image:url('img/item.png')"></a>
+												<a class="basket__el-inf" href="#">Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%</a>
+												<div class="basket__el-val">
+													<div class="basket__el-price">Цена: 350 руб.</div>
+													<div class="basket__el-incr">
+														<div class="elements-icr-block">
+															<div class="incr">
+																<div class="incr__minus incr__nav">
+																	<svg class="icon">
+																		<use xlink:href="#arrow-left"></use>
+																	</svg>
+																</div>
+																<div class="incr__val">
+																	<span>1</span>
+																	<div class="incr__val-coner">шт.</div>
+																</div>
+																<div class="incr__plus incr__nav">
+																	<svg class="icon">
+																		<use xlink:href="#arrow-right"></use>
+																	</svg>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--обреж строку описания товара с ... чтобы по высоте было примерно 70px-->
+											<div class="basket__el">
+												<a class="basket__el-img" href="#" style="background-image:url('img/item.png')"></a>
+												<a class="basket__el-inf" href="#">Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%</a>
+												<div class="basket__el-val">
+													<div class="basket__el-price">Цена: 350 руб.</div>
+													<div class="basket__el-incr">
+														<div class="elements-icr-block">
+															<div class="incr">
+																<div class="incr__minus incr__nav">
+																	<svg class="icon">
+																		<use xlink:href="#arrow-left"></use>
+																	</svg>
+																</div>
+																<div class="incr__val">
+																	<span>1</span>
+																	<div class="incr__val-coner">шт.</div>
+																</div>
+																<div class="incr__plus incr__nav">
+																	<svg class="icon">
+																		<use xlink:href="#arrow-right"></use>
+																	</svg>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--обреж строку описания товара с ... чтобы по высоте было примерно 70px-->
+											<div class="basket__el">
+												<a class="basket__el-img" href="#" style="background-image:url('img/item.png')"></a>
+												<a class="basket__el-inf" href="#">Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%</a>
+												<div class="basket__el-val">
+													<div class="basket__el-price">Цена: 350 руб.</div>
+													<div class="basket__el-incr">
+														<div class="elements-icr-block">
+															<div class="incr">
+																<div class="incr__minus incr__nav">
+																	<svg class="icon">
+																		<use xlink:href="#arrow-left"></use>
+																	</svg>
+																</div>
+																<div class="incr__val">
+																	<span>1</span>
+																	<div class="incr__val-coner">шт.</div>
+																</div>
+																<div class="incr__plus incr__nav">
+																	<svg class="icon">
+																		<use xlink:href="#arrow-right"></use>
+																	</svg>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--обреж строку описания товара с ... чтобы по высоте было примерно 70px-->
+											<div class="basket__el">
+												<a class="basket__el-img" href="#" style="background-image:url('img/item.png')"></a>
+												<a class="basket__el-inf" href="#">Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%</a>
+												<div class="basket__el-val">
+													<div class="basket__el-price">Цена: 350 руб.</div>
+													<div class="basket__el-incr">
+														<div class="elements-icr-block">
+															<div class="incr">
+																<div class="incr__minus incr__nav">
+																	<svg class="icon">
+																		<use xlink:href="#arrow-left"></use>
+																	</svg>
+																</div>
+																<div class="incr__val">
+																	<span>1</span>
+																	<div class="incr__val-coner">шт.</div>
+																</div>
+																<div class="incr__plus incr__nav">
+																	<svg class="icon">
+																		<use xlink:href="#arrow-right"></use>
+																	</svg>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--обреж строку описания товара с ... чтобы по высоте было примерно 70px-->
+											<div class="basket__el">
+												<a class="basket__el-img" href="#" style="background-image:url('img/item.png')"></a>
+												<a class="basket__el-inf" href="#">Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5 %Йогурт с абрикосом, миндалем и гранолой, 245 грамм, 2,7-3,5%</a>
+												<div class="basket__el-val">
+													<div class="basket__el-price">Цена: 350 руб.</div>
+													<div class="basket__el-incr">
+														<div class="elements-icr-block">
+															<div class="incr">
+																<div class="incr__minus incr__nav">
+																	<svg class="icon">
+																		<use xlink:href="#arrow-left"></use>
+																	</svg>
+																</div>
+																<div class="incr__val">
+																	<span>1</span>
+																	<div class="incr__val-coner">шт.</div>
+																</div>
+																<div class="incr__plus incr__nav">
+																	<svg class="icon">
+																		<use xlink:href="#arrow-right"></use>
+																	</svg>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="basket__total">2 220 руб.</div>
+										<div class="basket__get">
+											<a class="btn--md btn--light" href="#">В корзину</a>
+											<a class="btn--md btn--mark" href="#">оформить</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__nav-cont">
+					<div class="header__nav">
+						<a class="header__nav-el header__nav-el--active" href="#">Продукция</a>
+						<a class="header__nav-el" href="#">О молоке</a>
+						<a class="header__nav-el" href="#">Экспертное мнение</a>
+						<a class="header__nav-el" href="#">О доставке</a>
+						<a class="header__nav-el" href="#">Новости</a>
+						<a class="header__nav-el" href="#">Контакты</a>
+					</div>
+					<div class="header-mobile-cont">
+						<div class="header-mobile-auth modal-get" data-modal="enter">
+							<svg class="icon">
+								<use xlink:href="#profile"></use>
+							</svg>
+						</div>
+						<a class="header-mobile-phone" href="call:8 800 333 86 63">8 800 333 86 63</a>
+						<div class="header-mobile-call modal-get" data-modal="callback">Обратный звонок</div>
+					</div>
+				</div>
+			</div>
+			<!--block header end-->
+			<div class="cont cont--contact" style="background-image:url('img/map.jpg')">
+				<div class="main-cont">
+					<div class="block-up">
+						<div class="header-up">
+							<div class="header-up__text">Контакты</div>
+						</div>
+						<div class="treaple treaple--contact">
+							<div class="treaple__el">
+								<div class="contact-title">ОФИС</div>
+								<div class="contact-text">96084, г. Санкт-Петербург, м.Спортивная, Петровский проспект, д.20, корп.1</div>
+							</div>
+							<div class="treaple__el">
+								<div class="contact-title">Контакты</div>
+								<a class="contact-phone" href="tel:">8 812 309 1158</a>
+								<a class="contact-mail" href="#">info@milkbutik.ru</a>
+							</div>
+							<div class="treaple__el">
+								<div class="contact-title">мы в соцсетях</div>
+								<div class="contact-soc">
+									<div class="contact-soc-el contact-soc-el--vk">
+										<svg class="icon">
+											<use xlink:href="#soc-vk"></use>
+										</svg>
+									</div>
+									<div class="contact-soc-el contact-soc-el--fb">
+										<svg class="icon">
+											<use xlink:href="#soc-facebook"></use>
+										</svg>
+									</div>
+									<div class="contact-soc-el contact-soc-el--inst">
+										<svg class="icon">
+											<use xlink:href="#soc-instagram"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contact-wrap">
+						<div class="contact__col">
+							<div class="deliver__title">Связаться с нами</div>
+							<form action="#">
+								<div class="input-row">
+									<div class="input-row-title">Ваше имя</div>
+									<input class="input" type="text" />
+								</div>
+								<div class="input-row">
+									<div class="input-row-title">Ваш телефон</div>
+									<input class="input" type="text" />
+								</div>
+								<div class="input-row">
+									<div class="input-row-title">Ваше сообщение</div>
+									<textarea class="input" name="text" cols="30" rows="10"></textarea>
+								</div>
+								<div class="deliver__get">
+									<div class="deliver__get-text">Нажимая кнопку “Зарегистрироваться” вы дайте согласие на обработку персональных данных</div>
+									<div class="btn--md btn--mark">
+										<div class="btn--icon">
+											<span>отправить</span>
+											<svg class="nav-icon">
+												<use xlink:href="#arrow-right"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--block footer-->
+			<div class="footer-cont">
+				<div class="footer-wave"></div>
+				<div class="main-cont">
+					<div class="footer">
+						<div class="footer__info">
+							<div class="footer__info-text">© Милк Бутик. 2018. Все права защищены</div>
+							<a class="footer__info-offer" href="#">Публичная оферта</a>
+							<div class="footer-soc-row">
+								<a class="footer-soc-row__el" href="#">
+									<svg class="icon">
+										<use xlink:href="#soc-vk"></use>
+									</svg>
+								</a>
+								<a class="footer-soc-row__el" href="#">
+									<svg class="icon">
+										<use xlink:href="#soc-facebook"></use>
+									</svg>
+								</a>
+								<a class="footer-soc-row__el" href="#">
+									<svg class="icon">
+										<use xlink:href="#soc-instagram"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="footer__nav">
+							<a class="footer__nav-el" href="#">Молоко</a>
+							<a class="footer__nav-el" href="#">Десерты</a>
+							<a class="footer__nav-el" href="#">Кисломолочка</a>
+							<a class="footer__nav-el" href="#">Сметана</a>
+							<a class="footer__nav-el" href="#">О молоке</a>
+							<a class="footer__nav-el" href="#">Экспертное мнение</a>
+							<a class="footer__nav-el" href="#">О доставке</a>
+							<a class="footer__nav-el" href="#">Новости</a>
+						</div>
+						<div class="footer__cont">
+							<div class="footer__pay">
+								<div class="footer__pay-icon">
+									<svg class="icon">
+										<use xlink:href="#money"></use>
+									</svg>
+								</div>
+								<div class="footer__pay-text">Оплата картой онлайн</div>
+							</div>
+							<a class="footer__phone" href="tel:8 800 333 86 63">8 800 333 86 63</a>
+							<div class="footer__callback modal-get" data-modal="callback">Обратный звонок</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--block footer end-->
+		</div>
+		<!--block modals-->
+		<div class="modal-layer">
+			<div class="modal" data-modal="pass">
+				<div class="modal-content">
+					<div class="modal-close">
+						<svg class="icon">
+							<use xlink:href="#close"></use>
+						</svg>
+					</div>
+					<div class="modal-head">
+						<div class="wave-bg"></div>
+						<div class="modal-head-wave"></div>
+						<div class="modal-title">Восстановление пароля</div>
+					</div>
+					<div class="modal-info">
+						<form action="#">
+							<div class="input-row">
+								<div class="input-row-title">Ваш Email</div>
+								<input class="input" type="text" />
+							</div>
+							<div class="pass-text--mid">Мы отправим пароль на указанный вами email</div>
+							<div class="btn-row--mid">
+								<div class="btn--md btn--mark btn--modal">
+									<div class="btn--icon">
+										<span>Отправить</span>
+										<svg class="nav-icon">
+											<use xlink:href="#arrow-right"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="modal modal--auth" data-modal="enter">
+				<div class="modal-content">
+					<div class="modal-close">
+						<svg class="icon">
+							<use xlink:href="#close"></use>
+						</svg>
+					</div>
+					<div class="modal-head modal-head--tab">
+						<div class="wave-bg"></div>
+						<div class="modal-head-wave"></div>
+						<div class="modal-title__el modal-title__el--active" data-tab="enter">Вход</div>
+						<div class="modal-title__el" data-tab="reg">регистрация</div>
+					</div>
+					<div class="modal-info">
+						<div class="modal-tab modal-tab--active" data-tab="enter">
+							<form action="#">
+								<div class="input-row">
+									<div class="input-row-title">Ваш Email</div>
+									<input class="input" type="text" />
+								</div>
+								<div class="input-row">
+									<div class="input-row-title">Ваш Пароль</div>
+									<input class="input" type="password" />
+								</div>
+								<div class="pass-fogot modal-get" data-modal="pass">Забыли пароль?</div>
+								<div class="btn-row--mid">
+									<div class="btn--md btn--mark btn--modal">
+										<div class="btn--icon">
+											<span>войти</span>
+											<svg class="nav-icon">
+												<use xlink:href="#arrow-right"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="modal-tab" data-tab="reg">
+							<form action="#">
+								<div class="input-row">
+									<div class="input-row-title">Ваше имя</div>
+									<input class="input" type="text" />
+								</div>
+								<div class="input-row">
+									<div class="input-row-title">Ваш Email</div>
+									<input class="input" type="text" />
+								</div>
+								<div class="input-row-half">
+									<div class="input-row-half__el">
+										<div class="input-row-title">Пароль</div>
+										<input class="input" type="password" />
+									</div>
+									<div class="input-row-half__el">
+										<div class="input-row-title">Повторите пароль</div>
+										<input class="input" type="password" />
+									</div>
+								</div>
+								<div class="btn-row--mid">
+									<div class="btn--md btn--mark btn--modal">
+										<div class="btn--icon">
+											<span>зарегистрироваться</span>
+											<svg class="nav-icon">
+												<use xlink:href="#arrow-right"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</form>
+							<div class="personal-text">Нажимая кнопку “Зарегистрироваться” вы дайте согласие на обработку персональных данных</div>
+						</div>
+						<div class="modal-soc">
+							<div class="modal-soc-text">Или войдите через соц.сети</div>
+							<div class="modal-soc-row">
+								<div class="modal-soc-el modal-soc-el--inst">
+									<svg class="icon">
+										<use xlink:href="#soc-instagram"></use>
+									</svg>
+								</div>
+								<div class="modal-soc-el modal-soc-el--twitter">
+									<svg class="icon">
+										<use xlink:href="#soc-twitter"></use>
+									</svg>
+								</div>
+								<div class="modal-soc-el modal-soc-el--fb">
+									<svg class="icon">
+										<use xlink:href="#soc-facebook"></use>
+									</svg>
+								</div>
+								<div class="modal-soc-el modal-soc-el--vk">
+									<svg class="icon">
+										<use xlink:href="#soc-vk"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal" data-modal="callback">
+				<div class="modal-content">
+					<div class="modal-close">
+						<svg class="icon">
+							<use xlink:href="#close"></use>
+						</svg>
+					</div>
+					<div class="modal-head">
+						<div class="wave-bg"></div>
+						<div class="modal-head-wave"></div>
+						<div class="modal-title">Обратный звонок</div>
+					</div>
+					<div class="modal-info">
+						<form action="#">
+							<div class="input-row">
+								<div class="input-row-title">Ваш телефон</div>
+								<input class="input" type="text" />
+							</div>
+							<div class="pass-text--mid">Мы перезвоним в ближайшее время.</div>
+							<div class="btn-row--mid">
+								<div class="btn--md btn--mark btn--modal">
+									<div class="btn--icon">
+										<span>Отправить</span>
+										<svg class="nav-icon">
+											<use xlink:href="#arrow-right"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--block modals end-->
+		<script src="js/combined.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/script-edit.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,51 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.content.content--up
+	+header()
+	.cont.cont--contact(style="background-image:url('img/map.jpg')")
+		.main-cont
+			.block-up
+				.header-up
+					.header-up__text Контакты
+				.treaple.treaple--contact
+					.treaple__el
+						.contact-title ОФИС
+						.contact-text 96084, г. Санкт-Петербург, м.Спортивная, Петровский проспект, д.20, корп.1
+					.treaple__el
+						.contact-title Контакты
+						a(href="tel:").contact-phone 8 812 309 1158
+						a(href="#").contact-mail info@milkbutik.ru
+					.treaple__el
+						.contact-title мы в соцсетях
+						.contact-soc
+							.contact-soc-el.contact-soc-el--vk
+								+icon("soc-vk","icon")
+							.contact-soc-el.contact-soc-el--fb
+								+icon("soc-facebook","icon")
+							.contact-soc-el.contact-soc-el--inst
+								+icon("soc-instagram","icon")
+
+			.contact-wrap
+				.contact__col
+					.deliver__title Связаться с нами
+					form(action="#")
+						.input-row
+							.input-row-title Ваше имя
+							input(type="text").input
+						.input-row
+							.input-row-title Ваш телефон
+							input(type="text").input
+						.input-row
+							.input-row-title Ваше сообщение
+							textarea(name="text", cols="30", rows="10").input
+						.deliver__get
+							.deliver__get-text Нажимая кнопку “Зарегистрироваться” вы дайте согласие на обработку персональных данных
+							.btn--md.btn--mark
+								.btn--icon
+									span отправить
+									+icon("arrow-right","nav-icon")
+	+footer()
++modals()
+
+include ./block_html/_script.pug

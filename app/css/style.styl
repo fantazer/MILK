@@ -1481,9 +1481,15 @@ p
 //.btn--icon
 //.nav-icon
 .input-row-half
+	+below(640px)
+		fw()
 	flex(between)
 	margin-bottom: 20px
 .input-row-half__el
+	+below(640px)
+		width: 100%
+		&:first-child
+			margin-bottom: 20px
 	width:48%
 	input
 		width: 100%
@@ -1698,16 +1704,25 @@ select.select-beauty
 	@extend .page-title
 
 .treaple
+	+below(640px)
+		fw()
 	max-width 860px
 	margin-left: auto
 	margin-right: auto
 	flex(mid)
 .treaple__el
+	+below(640px)
+		width: 100%!important
+		padding: 20px 0!important
 	&:nth-child(1)
 		flex(mid)
 		margin-right: auto
 		width: 33%
 	&:nth-child(2)
+		+below(640px)
+			border 0
+			border-top 1px solid #dadada
+			border-bottom 1px solid #dadada
 		padding: 45px 0
 		border-left 1px solid #dadada
 		border-right 1px solid #dadada
@@ -1736,13 +1751,25 @@ select.select-beauty
 	line-height: 1.6
 
 .deliver-map
+	+below(640px)
+		height: 300px
 	height: 400px
 	background: #f1ebff
 
 .deliver
+	+below(960px)
+		max-width 640px
+		margin-left: auto
+		margin-right: auto
+		fw()
 	f()
 	justify-content: space-between
 .deliver__col
+	+below(960px)
+		width: 100%
+		margin-bottom: 20px
+	+below(640px)
+		padding: 30px 20px
 	width: 49%
 	@extend .card
 	background: white
@@ -1777,21 +1804,127 @@ select.select-beauty
 	@extend .type--md
 	up()
 	margin-bottom: 35px
-//.input-row
-//.input-row-title
-//.input
-//.input-row-half
-//.input-row-half__el
+
 .deliver__get
+	+below(640px)
+		fw()
+		.btn--md
+			width: 100%
 	flex(between)
+
 .deliver__get-text
+	+below(640px)
+		width: 100%
+		margin-bottom: 20px
 	width: 70%
 	opacity 0.8
 	color #6d6680
 	line-height: 1.6
 	font-size: 12px
 	margin-right: 20px
-//.btn--md
-//.btn--mark
-//.btn--icon
-//.nav-icon
+
+.treaple--contact
+	.treaple__el
+		fl()
+		padding: 35px 0
+		justify-content: flex-start
+		&:nth-child(1)
+			flex(mid)
+			margin-right: auto
+			width: 33%
+		&:nth-child(2)
+			padding: 45px 0
+			border-left 1px solid #dadada
+			border-right 1px solid #dadada
+			width: 33%
+			flex(mid)
+		&:nth-child(3)
+			flex(mid)
+			margin-left: auto
+			width: 33%
+	align-items stretch
+	width: 100%
+	max-width:100%
+.contact-title
+	+below(768px)
+		text-align: center
+	color #89819e
+	up()
+	margin-bottom: 20px
+	width: 190px
+.contact-text
+	+below(768px)
+		text-align: center
+	width: 195px
+	line-height: 1.6
+.contact-phone
+	+below(768px)
+		text-align: center
+	width: 190px
+	margin-bottom: 10px
+.contact-mail
+	+below(768px)
+		text-align: center
+	width: 190px
+	color #00b4ff
+	text-decoration: underline
+.contact-soc
+	width: 190px
+//.contact-soc-el
+//.contact-soc-el--inst
+//.icon
+//.contact-soc-el--twitter
+//.contact-soc-el--fb
+//.contact-soc-el--vk
+
+.contact-soc
+	+below(768px)
+		flex(mid)
+		width: 100%
+		margin-right: -12px
+	f()
+.contact-soc-el
+	+below(640px)
+		size 36px
+	round()
+	flex(mid)
+	cp()
+	tr(all)
+	size 36px
+	margin: 0 6px
+	&:hover
+		transform scale(1.05)
+	.icon
+		+below(640px)
+			size 22px
+		size 24px
+		fill white
+.contact-soc-el--inst
+	background-color #ac28a1
+	background-image linear-gradient(-60deg, #fffc00 0%, #ff0000 50%, #0a00b2 100%)
+
+
+.contact-soc-el--fb
+	background-color #4c3eb1
+
+.contact-soc-el--vk
+	background-color #3a7dd0
+	margin-left: 0
+
+.contact-wrap
+	f()
+.contact__col
+	+below(768px)
+		width: 100%
+		margin-top: 20px
+		padding: 30px 20px
+	width: 49%
+	@extend .card
+	background: white
+	padding: 50px
+	margin-left: auto
+	margin-top: 85px
+	textarea
+		width: 100%
+.cont--contact
+	bg-full()
