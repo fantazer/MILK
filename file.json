@@ -13,6 +13,8 @@
 		"items":"items",
 		"basket":"basket",
 		"bonus":"bonus",
-		"lk":"lk"
+		"lk":"lk",
+		"deliver":"deliver",
+		"contact":"contact"
 	}
 }

@@ -889,13 +889,11 @@ p
 .detail
 	+below(768px)
 		margin-top: 0
-
 	@extend .card
 	background: white
 	margin-bottom: 20px
 	margin-top: -140px
 .header-back
-
 	flex(mid)
 	padding: 25px 0
 	border-bottom 1px solid #d4cee1
@@ -1684,3 +1682,116 @@ select.select-beauty
 	font-weight 400
 	line-height: 1.6
 	margin: 60px 0
+
+.block-up
+	+below(768px)
+		margin-top: 0
+	@extend .card
+	background: white
+	margin-bottom: 20px
+	margin-top: -140px
+
+.header-up
+	flex(mid)
+	border-bottom 1px solid #d4cee1
+.header-up__text
+	@extend .page-title
+
+.treaple
+	max-width 860px
+	margin-left: auto
+	margin-right: auto
+	flex(mid)
+.treaple__el
+	&:nth-child(1)
+		flex(mid)
+		margin-right: auto
+		width: 33%
+	&:nth-child(2)
+		padding: 45px 0
+		border-left 1px solid #dadada
+		border-right 1px solid #dadada
+		width: 33%
+		flex(mid)
+	&:nth-child(3)
+		flex(mid)
+		margin-left: auto
+		width: 33%
+.deliver-text
+	up()
+	@extend .type--md
+	line-height: 1.4
+.deliver-date
+	flex(mid)
+.deliver-date__icon
+	.icon
+		size 30px
+		fill #7d5dcf
+		margin-right: 20px
+.deliver-date__text
+	color #7d5dcf
+	width: 150px
+	@extend .type--sm
+	up()
+	line-height: 1.6
+
+.deliver-map
+	height: 400px
+	background: #f1ebff
+
+.deliver
+	f()
+	justify-content: space-between
+.deliver__col
+	width: 49%
+	@extend .card
+	background: white
+	padding: 50px
+	textarea
+		width: 100%
+.deliver__el
+	f()
+	justify-content: space-between
+	margin-bottom: 50px
+.deliver__el-icon
+	round()
+	flex(mid)
+	background: #ebe5ff
+	margin-right: 30px
+	size 60px
+	.icon
+		size 30px
+		fill #9475ff
+.deliver__el-cont
+	width:calc(100% -  90px)
+
+.deliver__el-title
+	font-family Pusia
+	font-size 20px
+	margin-bottom: 20px
+.deliver__el-text
+	color #2e2e2e
+	line-height: 1.6
+
+.deliver__title
+	@extend .type--md
+	up()
+	margin-bottom: 35px
+//.input-row
+//.input-row-title
+//.input
+//.input-row-half
+//.input-row-half__el
+.deliver__get
+	flex(between)
+.deliver__get-text
+	width: 70%
+	opacity 0.8
+	color #6d6680
+	line-height: 1.6
+	font-size: 12px
+	margin-right: 20px
+//.btn--md
+//.btn--mark
+//.btn--icon
+//.nav-icon
