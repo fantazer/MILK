@@ -4564,4 +4564,25 @@ select.select-beauty {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  margin-top: -40px;
+}
+.cont--contact .block-up {
+  margin-top: -100px;
+}
+@media only screen and (max-width: 768px) {
+  .cont--contact .block-up {
+    margin-top: 0;
+  }
+}
+.content--contact .wave-bg {
+  display: none;
+}
+.content--contact .head-wave {
+  display: none;
+}
+.content--contact .head {
+  background-image: url("../img/contact-head.png") !important;
+  background-color: transparent !important;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
 }
